@@ -91,6 +91,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges59 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges60 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges61 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges62 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges63 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2ShadowPanel8 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
@@ -158,6 +160,7 @@
             guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             guna2ShadowPanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox4).BeginInit();
             guna2ShadowPanel5.SuspendLayout();
@@ -1007,6 +1010,22 @@
             guna2Elipse4.BorderRadius = 15;
             guna2Elipse4.TargetControl = guna2Panel10;
             // 
+            // guna2Button8
+            // 
+            guna2Button8.CustomizableEdges = customizableEdges62;
+            guna2Button8.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button8.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button8.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button8.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button8.Font = new Font("Segoe UI", 9F);
+            guna2Button8.ForeColor = Color.White;
+            guna2Button8.Location = new Point(1269, 12);
+            guna2Button8.Name = "guna2Button8";
+            guna2Button8.ShadowDecoration.CustomizableEdges = customizableEdges63;
+            guna2Button8.Size = new Size(180, 45);
+            guna2Button8.TabIndex = 28;
+            guna2Button8.Text = "guna2Button8";
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1014,7 +1033,8 @@
             BackColor = Color.FromArgb(241, 248, 242);
             BackgroundImage = Properties.Resources.Green_Academic_Waves_Template1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1484, 660);
+            ClientSize = new Size(1603, 925);
+            Controls.Add(guna2Button8);
             Controls.Add(guna2ShadowPanel9);
             Controls.Add(guna2HtmlLabel17);
             Controls.Add(guna2HtmlLabel16);
@@ -1139,5 +1159,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button8;
     }
 }
