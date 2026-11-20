@@ -1019,7 +1019,7 @@
             guna2Button8.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button8.Font = new Font("Segoe UI", 9F);
             guna2Button8.ForeColor = Color.White;
-            guna2Button8.Location = new Point(1269, 12);
+            guna2Button8.Location = new Point(1222, 17);
             guna2Button8.Name = "guna2Button8";
             guna2Button8.ShadowDecoration.CustomizableEdges = customizableEdges63;
             guna2Button8.Size = new Size(180, 45);
