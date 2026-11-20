@@ -40,6 +40,7 @@
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2ShadowPanel9 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            button1 = new Button();
             guna2ShadowPanel5.SuspendLayout();
             guna2ShadowPanel6.SuspendLayout();
             guna2ShadowPanel9.SuspendLayout();
@@ -86,7 +87,7 @@
             // 
             // guna2ShadowPanel4
             // 
-            guna2ShadowPanel4.BackColor = Color.White;
+            guna2ShadowPanel4.BackColor = Color.Transparent;
             guna2ShadowPanel4.FillColor = Color.Gainsboro;
             guna2ShadowPanel4.Location = new Point(27, 121);
             guna2ShadowPanel4.Name = "guna2ShadowPanel4";
@@ -201,6 +202,16 @@
             guna2HtmlLabel3.TabIndex = 3;
             guna2HtmlLabel3.Text = "To Do List";
             // 
+            // button1
+            // 
+            button1.Location = new Point(12, 1);
+            button1.Name = "button1";
+            button1.Size = new Size(74, 39);
+            button1.TabIndex = 10;
+            button1.Text = "Back";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -208,6 +219,7 @@
             BackgroundImage = Properties.Resources.Green_Academic_Waves_Template1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1473, 846);
+            Controls.Add(button1);
             Controls.Add(guna2ShadowPanel9);
             Controls.Add(guna2ShadowPanel6);
             Controls.Add(guna2ShadowPanel3);
@@ -241,5 +253,6 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel7;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Button button1;
     }
 }
