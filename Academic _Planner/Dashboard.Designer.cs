@@ -158,6 +158,7 @@
             guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            label1 = new Label();
             guna2ShadowPanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox4).BeginInit();
             guna2ShadowPanel5.SuspendLayout();
@@ -1007,6 +1008,15 @@
             guna2Elipse4.BorderRadius = 15;
             guna2Elipse4.TargetControl = guna2Panel10;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(919, 326);
+            label1.Name = "label1";
+            label1.Size = new Size(21, 15);
+            label1.TabIndex = 28;
+            label1.Text = "try";
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1014,7 +1024,8 @@
             BackColor = Color.FromArgb(241, 248, 242);
             BackgroundImage = Properties.Resources.Green_Academic_Waves_Template1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1484, 660);
+            ClientSize = new Size(1756, 1100);
+            Controls.Add(label1);
             Controls.Add(guna2ShadowPanel9);
             Controls.Add(guna2HtmlLabel17);
             Controls.Add(guna2HtmlLabel16);
@@ -1139,5 +1150,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Label label1;
     }
 }
