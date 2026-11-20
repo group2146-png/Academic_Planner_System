@@ -91,6 +91,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges59 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges60 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges61 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges62 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2ShadowPanel8 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
@@ -158,7 +159,7 @@
             guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(components);
-            label1 = new Label();
+            guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             guna2ShadowPanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox4).BeginInit();
             guna2ShadowPanel5.SuspendLayout();
@@ -1008,14 +1009,21 @@
             guna2Elipse4.BorderRadius = 15;
             guna2Elipse4.TargetControl = guna2Panel10;
             // 
-            // label1
+            // guna2CircleButton1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(919, 326);
-            label1.Name = "label1";
-            label1.Size = new Size(21, 15);
-            label1.TabIndex = 28;
-            label1.Text = "try";
+            guna2CircleButton1.DisabledState.BorderColor = Color.DarkGray;
+            guna2CircleButton1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2CircleButton1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2CircleButton1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2CircleButton1.Font = new Font("Segoe UI", 9F);
+            guna2CircleButton1.ForeColor = Color.White;
+            guna2CircleButton1.Location = new Point(1002, 231);
+            guna2CircleButton1.Name = "guna2CircleButton1";
+            guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges62;
+            guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            guna2CircleButton1.Size = new Size(148, 148);
+            guna2CircleButton1.TabIndex = 28;
+            guna2CircleButton1.Text = "guna2CircleButton1";
             // 
             // Dashboard
             // 
@@ -1025,7 +1033,7 @@
             BackgroundImage = Properties.Resources.Green_Academic_Waves_Template1;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1756, 1100);
-            Controls.Add(label1);
+            Controls.Add(guna2CircleButton1);
             Controls.Add(guna2ShadowPanel9);
             Controls.Add(guna2HtmlLabel17);
             Controls.Add(guna2HtmlLabel16);
@@ -1150,6 +1158,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Label label1;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
     }
 }
