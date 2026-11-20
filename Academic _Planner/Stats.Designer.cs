@@ -30,13 +30,13 @@
         {
             SuspendLayout();
             // 
-            // Form1
+            // Stats
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1357, 722);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "Stats";
+            Text = "Stats";
             ResumeLayout(false);
         }
 

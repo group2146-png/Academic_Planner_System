@@ -125,5 +125,11 @@ namespace Academic__Planner
 
         }
 
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            Stats statsForm = new Stats();
+            statsForm.Show();
+            this.Hide();
+        }
     }
 }
