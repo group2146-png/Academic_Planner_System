@@ -36,5 +36,10 @@ namespace Academic__Planner
             if (e.CloseReason == CloseReason.UserClosing)
                 Application.Exit();
         }
+
+        private void Calendar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

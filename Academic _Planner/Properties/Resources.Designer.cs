@@ -63,6 +63,16 @@ namespace Academic__Planner.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Academic_Planner_Dashboard_UI {
+            get {
+                object obj = ResourceManager.GetObject("Academic Planner Dashboard UI", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Academic_Planner_Green_Gradient_Logo {
             get {
                 object obj = ResourceManager.GetObject("Academic Planner Green Gradient Logo", resourceCulture);
