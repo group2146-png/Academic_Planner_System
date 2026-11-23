@@ -7,12 +7,13 @@ namespace Academic__Planner
 {
     public partial class Dashboard : Form
     {
-        private Form activeForm = null;
+        private Form? activeForm = null;
 
         public Dashboard()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+
         }
 
         // Opens another form inside the dashboard content panel
@@ -39,6 +40,8 @@ namespace Academic__Planner
             childForm.Show();
             childForm.BringToFront();
         }
+
+
 
         // MY ACTIVITIES BUTTON
         private void btnMyActivities_ButtonClick(object sender, EventArgs e)

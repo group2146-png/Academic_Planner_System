@@ -42,5 +42,35 @@ namespace Academic__Planner
         {
 
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtTitle.Text) || cmbDifficulty.SelectedItem == null)
+            {
+                MessageBox.Show("Please fill in the title and difficulty.");
+                return;
+            }
+
+            if (dtpEnd.Value < dtpStart.Value)
+            {
+                MessageBox.Show("End date can't be before the start date.");
+                return;
+            }
+
+            ActivityStore.Activities.Add(new ActivityItem
+            {
+                Title = txtTitle.Text,
+                StartAt = dtpStart.Value,
+                Difficulty = cmbDifficulty.SelectedItem.ToString(),
+                EndAt = dtpEnd.Value
+            });
+
+            MessageBox.Show("Activity saved!");
+            txtTitle.Clear();
+            cmbDifficulty.SelectedIndex = -1;
+            dtpStart.Value = DateTime.Now;
+            dtpEnd.Value = DateTime.Now;
+            MessageBox.Show("Total saved: " + ActivityStore.Activities.Count);
+        }
     }
 }
