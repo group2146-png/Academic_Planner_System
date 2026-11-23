@@ -12,6 +12,7 @@ namespace Academic__Planner
         public Dashboard()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         // Opens another form inside the dashboard content panel

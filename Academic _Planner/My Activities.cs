@@ -14,6 +14,7 @@ namespace Academic__Planner
         public Form2()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)

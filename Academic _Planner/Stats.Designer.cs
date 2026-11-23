@@ -38,6 +38,7 @@
             Name = "Stats";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Stats";
+            Load += Stats_Load;
             ResumeLayout(false);
         }
 

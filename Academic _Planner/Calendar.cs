@@ -14,6 +14,7 @@ namespace Academic__Planner
         public Calendar()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void guna2ShadowPanel5_Paint(object sender, PaintEventArgs e)

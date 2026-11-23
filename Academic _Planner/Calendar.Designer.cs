@@ -129,6 +129,7 @@
             guna2ComboBox2.Font = new Font("Segoe UI", 10F);
             guna2ComboBox2.ForeColor = Color.FromArgb(68, 88, 112);
             guna2ComboBox2.ItemHeight = 30;
+            guna2ComboBox2.Items.AddRange(new object[] { "Easy", "Moderate", "Hard" });
             guna2ComboBox2.Location = new Point(505, 123);
             guna2ComboBox2.Name = "guna2ComboBox2";
             guna2ComboBox2.ShadowDecoration.CustomizableEdges = customizableEdges4;
