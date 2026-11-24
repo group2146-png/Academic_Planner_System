@@ -395,7 +395,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1384, 861);
+            ClientSize = new Size(1384, 698);
             Controls.Add(guna2ShadowPanel5);
             Name = "Stats";
             StartPosition = FormStartPosition.CenterScreen;

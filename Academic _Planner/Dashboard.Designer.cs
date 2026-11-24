@@ -739,6 +739,7 @@
             guna2HtmlLabel16.Size = new Size(349, 67);
             guna2HtmlLabel16.TabIndex = 20;
             guna2HtmlLabel16.Text = "Welcome Back!";
+            guna2HtmlLabel16.Click += guna2HtmlLabel16_Click;
             // 
             // guna2HtmlLabel17
             // 

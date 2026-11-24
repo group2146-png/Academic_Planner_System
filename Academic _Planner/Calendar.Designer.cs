@@ -44,6 +44,8 @@
             guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2ShadowPanel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             dtpEnd = new DateTimePicker();
             dtpStart = new DateTimePicker();
@@ -55,8 +57,6 @@
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Panel4.SuspendLayout();
             guna2ShadowPanel5.SuspendLayout();
             guna2ShadowPanel1.SuspendLayout();
@@ -116,6 +116,30 @@
             guna2ShadowPanel5.ShadowShift = 2;
             guna2ShadowPanel5.Size = new Size(573, 453);
             guna2ShadowPanel5.TabIndex = 16;
+            // 
+            // guna2HtmlLabel5
+            // 
+            guna2HtmlLabel5.BackColor = Color.Transparent;
+            guna2HtmlLabel5.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel5.ForeColor = Color.Black;
+            guna2HtmlLabel5.Location = new Point(17, 316);
+            guna2HtmlLabel5.Margin = new Padding(2);
+            guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            guna2HtmlLabel5.Size = new Size(28, 22);
+            guna2HtmlLabel5.TabIndex = 31;
+            guna2HtmlLabel5.Text = "End";
+            // 
+            // guna2HtmlLabel4
+            // 
+            guna2HtmlLabel4.BackColor = Color.Transparent;
+            guna2HtmlLabel4.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel4.ForeColor = Color.Black;
+            guna2HtmlLabel4.Location = new Point(17, 257);
+            guna2HtmlLabel4.Margin = new Padding(2);
+            guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            guna2HtmlLabel4.Size = new Size(34, 22);
+            guna2HtmlLabel4.TabIndex = 30;
+            guna2HtmlLabel4.Text = "Start";
             // 
             // guna2HtmlLabel3
             // 
@@ -252,30 +276,6 @@
             guna2HtmlLabel6.Size = new Size(79, 27);
             guna2HtmlLabel6.TabIndex = 29;
             guna2HtmlLabel6.Text = "Calendar";
-            // 
-            // guna2HtmlLabel4
-            // 
-            guna2HtmlLabel4.BackColor = Color.Transparent;
-            guna2HtmlLabel4.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel4.ForeColor = Color.Black;
-            guna2HtmlLabel4.Location = new Point(17, 257);
-            guna2HtmlLabel4.Margin = new Padding(2);
-            guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            guna2HtmlLabel4.Size = new Size(34, 22);
-            guna2HtmlLabel4.TabIndex = 30;
-            guna2HtmlLabel4.Text = "Start";
-            // 
-            // guna2HtmlLabel5
-            // 
-            guna2HtmlLabel5.BackColor = Color.Transparent;
-            guna2HtmlLabel5.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel5.ForeColor = Color.Black;
-            guna2HtmlLabel5.Location = new Point(17, 316);
-            guna2HtmlLabel5.Margin = new Padding(2);
-            guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            guna2HtmlLabel5.Size = new Size(28, 22);
-            guna2HtmlLabel5.TabIndex = 31;
-            guna2HtmlLabel5.Text = "End";
             // 
             // Calendar
             // 

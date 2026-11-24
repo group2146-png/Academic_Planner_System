@@ -13,7 +13,6 @@ namespace Academic__Planner
         public Login()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
             CenterLoginPanel();
         }
 

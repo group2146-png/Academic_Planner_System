@@ -12,7 +12,6 @@ namespace Academic__Planner
         public Dashboard()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
 
         }
 
@@ -137,6 +136,11 @@ namespace Academic__Planner
         }
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel16_Click(object sender, EventArgs e)
         {
 
         }

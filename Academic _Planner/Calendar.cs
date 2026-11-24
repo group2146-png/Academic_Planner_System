@@ -16,7 +16,6 @@ namespace Academic__Planner
         {
             InitializeComponent();
 
-            this.WindowState = FormWindowState.Maximized;
 
             // DateTimePicker styling and sizing
             dtpStart.AutoSize = false;
@@ -56,33 +55,7 @@ namespace Academic__Planner
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtTitle.Text) ||
-                cmbDifficulty.SelectedItem == null)
-            {
-                MessageBox.Show("Please fill in the title and difficulty.");
-                return;
-            }
-
-            if (dtpEnd.Value < dtpStart.Value)
-            {
-                MessageBox.Show("End date can't be before the start date.");
-                return;
-            }
-
-            ActivityStore.Activities.Add(new ActivityItem
-            {
-                Title = txtTitle.Text,
-                StartAt = dtpStart.Value,
-                Difficulty = cmbDifficulty.SelectedItem.ToString(),
-                EndAt = dtpEnd.Value
-            });
-
-            MessageBox.Show("Activity saved successfully!");
-
-            txtTitle.Clear();
-            cmbDifficulty.SelectedIndex = -1;
-            dtpStart.Value = DateTime.Now;
-            dtpEnd.Value = DateTime.Now;
+            
         }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)

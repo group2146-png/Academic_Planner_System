@@ -13,7 +13,6 @@ namespace Academic__Planner
         public Stats()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
         }
 
         private void Stats_Load(object sender, EventArgs e)
