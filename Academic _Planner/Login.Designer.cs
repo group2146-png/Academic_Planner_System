@@ -36,9 +36,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2CustomCheckBox1 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -52,6 +53,7 @@
             guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             guna2ShadowPanel1.SuspendLayout();
             guna2ShadowPanel2.SuspendLayout();
             guna2ShadowPanel3.SuspendLayout();
@@ -60,7 +62,6 @@
             // guna2ShadowPanel1
             // 
             guna2ShadowPanel1.BackColor = Color.Transparent;
-            guna2ShadowPanel1.Controls.Add(guna2HtmlLabel8);
             guna2ShadowPanel1.Controls.Add(guna2HtmlLabel7);
             guna2ShadowPanel1.Controls.Add(guna2CustomCheckBox1);
             guna2ShadowPanel1.Controls.Add(guna2HtmlLabel6);
@@ -70,6 +71,7 @@
             guna2ShadowPanel1.Controls.Add(guna2HtmlLabel1);
             guna2ShadowPanel1.Controls.Add(guna2ShadowPanel2);
             guna2ShadowPanel1.Controls.Add(guna2ShadowPanel3);
+            guna2ShadowPanel1.Controls.Add(guna2Button2);
             guna2ShadowPanel1.FillColor = Color.White;
             guna2ShadowPanel1.Location = new Point(732, 89);
             guna2ShadowPanel1.Name = "guna2ShadowPanel1";
@@ -78,17 +80,6 @@
             guna2ShadowPanel1.ShadowDepth = 50;
             guna2ShadowPanel1.Size = new Size(479, 493);
             guna2ShadowPanel1.TabIndex = 0;
-            // 
-            // guna2HtmlLabel8
-            // 
-            guna2HtmlLabel8.BackColor = Color.Transparent;
-            guna2HtmlLabel8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2HtmlLabel8.ForeColor = Color.FromArgb(46, 125, 50);
-            guna2HtmlLabel8.Location = new Point(268, 448);
-            guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            guna2HtmlLabel8.Size = new Size(51, 19);
-            guna2HtmlLabel8.TabIndex = 11;
-            guna2HtmlLabel8.Text = "Sign Up";
             // 
             // guna2HtmlLabel7
             // 
@@ -274,13 +265,30 @@
             guna2HtmlLabel4.TabIndex = 3;
             guna2HtmlLabel4.Text = "Password:";
             // 
+            // guna2Button2
+            // 
+            guna2Button2.CustomizableEdges = customizableEdges9;
+            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button2.FillColor = Color.White;
+            guna2Button2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2Button2.ForeColor = Color.FromArgb(46, 125, 50);
+            guna2Button2.Location = new Point(256, 443);
+            guna2Button2.Name = "guna2Button2";
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2Button2.Size = new Size(76, 26);
+            guna2Button2.TabIndex = 15;
+            guna2Button2.Text = "Sign Up";
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            BackgroundImageLayout = ImageLayout.Zoom;
+            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(1384, 861);
             Controls.Add(guna2ShadowPanel1);
             ForeColor = Color.FromArgb(54, 176, 51);
@@ -311,9 +319,9 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }
