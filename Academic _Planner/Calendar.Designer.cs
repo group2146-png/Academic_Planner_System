@@ -74,16 +74,16 @@
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2ShadowPanel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             dtpEnd = new DateTimePicker();
-            dtpStart = new DateTimePicker();
-            btnSave = new Guna.UI2.WinForms.Guna2Button();
-            cmbDifficulty = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            txtTitle = new Guna.UI2.WinForms.Guna2TextBox();
+            btnSave = new Guna.UI2.WinForms.Guna2Button();
             guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            dtpStart = new DateTimePicker();
+            cmbDifficulty = new Guna.UI2.WinForms.Guna2ComboBox();
+            txtTitle = new Guna.UI2.WinForms.Guna2TextBox();
+            guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
@@ -124,7 +124,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(791, 41);
+            button1.Location = new Point(306, 24);
             button1.Name = "button1";
             button1.Size = new Size(93, 43);
             button1.TabIndex = 10;
@@ -137,10 +137,10 @@
             guna2Panel4.Controls.Add(guna2HtmlLabel2);
             guna2Panel4.CustomizableEdges = customizableEdges1;
             guna2Panel4.FillColor = Color.FromArgb(46, 125, 82);
-            guna2Panel4.Location = new Point(399, 122);
+            guna2Panel4.Location = new Point(1128, 283);
             guna2Panel4.Name = "guna2Panel4";
             guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Panel4.Size = new Size(948, 72);
+            guna2Panel4.Size = new Size(606, 72);
             guna2Panel4.TabIndex = 17;
             // 
             // guna2HtmlLabel2
@@ -148,7 +148,7 @@
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2HtmlLabel2.ForeColor = Color.White;
-            guna2HtmlLabel2.Location = new Point(20, 20);
+            guna2HtmlLabel2.Location = new Point(15, 20);
             guna2HtmlLabel2.Margin = new Padding(2);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             guna2HtmlLabel2.Size = new Size(115, 32);
@@ -159,79 +159,37 @@
             // 
             guna2ShadowPanel5.BackColor = Color.Transparent;
             guna2ShadowPanel5.Controls.Add(dtpEnd);
-            guna2ShadowPanel5.Controls.Add(dtpStart);
-            guna2ShadowPanel5.Controls.Add(btnSave);
-            guna2ShadowPanel5.Controls.Add(cmbDifficulty);
             guna2ShadowPanel5.Controls.Add(guna2ComboBox1);
-            guna2ShadowPanel5.Controls.Add(guna2HtmlLabel5);
-            guna2ShadowPanel5.Controls.Add(guna2HtmlLabel4);
-            guna2ShadowPanel5.Controls.Add(guna2HtmlLabel3);
-            guna2ShadowPanel5.Controls.Add(guna2HtmlLabel1);
-            guna2ShadowPanel5.Controls.Add(txtTitle);
+            guna2ShadowPanel5.Controls.Add(btnSave);
             guna2ShadowPanel5.Controls.Add(guna2Panel5);
+            guna2ShadowPanel5.Controls.Add(dtpStart);
+            guna2ShadowPanel5.Controls.Add(cmbDifficulty);
+            guna2ShadowPanel5.Controls.Add(txtTitle);
+            guna2ShadowPanel5.Controls.Add(guna2HtmlLabel4);
+            guna2ShadowPanel5.Controls.Add(guna2HtmlLabel1);
+            guna2ShadowPanel5.Controls.Add(guna2HtmlLabel5);
+            guna2ShadowPanel5.Controls.Add(guna2HtmlLabel3);
             guna2ShadowPanel5.FillColor = Color.White;
-            guna2ShadowPanel5.Location = new Point(399, 122);
+            guna2ShadowPanel5.Location = new Point(1128, 283);
             guna2ShadowPanel5.Name = "guna2ShadowPanel5";
             guna2ShadowPanel5.Radius = 10;
             guna2ShadowPanel5.ShadowColor = Color.Black;
             guna2ShadowPanel5.ShadowDepth = 50;
             guna2ShadowPanel5.ShadowShift = 2;
-            guna2ShadowPanel5.Size = new Size(948, 272);
+            guna2ShadowPanel5.Size = new Size(606, 434);
             guna2ShadowPanel5.TabIndex = 16;
             // 
             // dtpEnd
             // 
-            dtpEnd.Location = new Point(621, 136);
+            dtpEnd.Location = new Point(313, 201);
             dtpEnd.Name = "dtpEnd";
-            dtpEnd.Size = new Size(162, 23);
+            dtpEnd.Size = new Size(273, 23);
             dtpEnd.TabIndex = 28;
-            // 
-            // dtpStart
-            // 
-            dtpStart.Location = new Point(323, 136);
-            dtpStart.Name = "dtpStart";
-            dtpStart.Size = new Size(162, 23);
-            dtpStart.TabIndex = 27;
-            // 
-            // btnSave
-            // 
-            btnSave.CustomizableEdges = customizableEdges3;
-            btnSave.DisabledState.BorderColor = Color.DarkGray;
-            btnSave.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnSave.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnSave.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnSave.Font = new Font("Segoe UI", 9F);
-            btnSave.ForeColor = Color.White;
-            btnSave.Location = new Point(827, 123);
-            btnSave.Name = "btnSave";
-            btnSave.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnSave.Size = new Size(98, 45);
-            btnSave.TabIndex = 26;
-            btnSave.Text = "save";
-            btnSave.Click += btnSave_Click;
-            // 
-            // cmbDifficulty
-            // 
-            cmbDifficulty.BackColor = Color.Transparent;
-            cmbDifficulty.CustomizableEdges = customizableEdges5;
-            cmbDifficulty.DrawMode = DrawMode.OwnerDrawFixed;
-            cmbDifficulty.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbDifficulty.FocusedColor = Color.FromArgb(94, 148, 255);
-            cmbDifficulty.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            cmbDifficulty.Font = new Font("Segoe UI", 10F);
-            cmbDifficulty.ForeColor = Color.FromArgb(68, 88, 112);
-            cmbDifficulty.ItemHeight = 30;
-            cmbDifficulty.Items.AddRange(new object[] { "Easy", "Moderate", "Hard" });
-            cmbDifficulty.Location = new Point(505, 123);
-            cmbDifficulty.Name = "cmbDifficulty";
-            cmbDifficulty.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            cmbDifficulty.Size = new Size(110, 36);
-            cmbDifficulty.TabIndex = 25;
             // 
             // guna2ComboBox1
             // 
             guna2ComboBox1.BackColor = Color.Transparent;
-            guna2ComboBox1.CustomizableEdges = customizableEdges7;
+            guna2ComboBox1.CustomizableEdges = customizableEdges3;
             guna2ComboBox1.DrawMode = DrawMode.OwnerDrawFixed;
             guna2ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             guna2ComboBox1.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -241,61 +199,66 @@
             guna2ComboBox1.ItemHeight = 30;
             guna2ComboBox1.Location = new Point(0, 0);
             guna2ComboBox1.Name = "guna2ComboBox1";
-            guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2ComboBox1.Size = new Size(140, 36);
             guna2ComboBox1.TabIndex = 24;
             // 
-            // guna2HtmlLabel5
+            // btnSave
             // 
-            guna2HtmlLabel5.BackColor = Color.Transparent;
-            guna2HtmlLabel5.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2HtmlLabel5.ForeColor = Color.Black;
-            guna2HtmlLabel5.Location = new Point(621, 91);
-            guna2HtmlLabel5.Margin = new Padding(2);
-            guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            guna2HtmlLabel5.Size = new Size(35, 27);
-            guna2HtmlLabel5.TabIndex = 23;
-            guna2HtmlLabel5.Text = "End";
+            btnSave.CustomizableEdges = customizableEdges5;
+            btnSave.DisabledState.BorderColor = Color.DarkGray;
+            btnSave.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSave.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSave.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSave.FillColor = Color.FromArgb(46, 125, 82);
+            btnSave.Font = new Font("Segoe UI", 9F);
+            btnSave.ForeColor = Color.White;
+            btnSave.Location = new Point(24, 350);
+            btnSave.Name = "btnSave";
+            btnSave.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnSave.Size = new Size(562, 45);
+            btnSave.TabIndex = 26;
+            btnSave.Text = "Save Activity";
+            btnSave.Click += btnSave_Click;
             // 
-            // guna2HtmlLabel4
+            // guna2Panel5
             // 
-            guna2HtmlLabel4.BackColor = Color.Transparent;
-            guna2HtmlLabel4.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2HtmlLabel4.ForeColor = Color.Black;
-            guna2HtmlLabel4.Location = new Point(505, 91);
-            guna2HtmlLabel4.Margin = new Padding(2);
-            guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            guna2HtmlLabel4.Size = new Size(83, 27);
-            guna2HtmlLabel4.TabIndex = 22;
-            guna2HtmlLabel4.Text = "Difficulty";
+            guna2Panel5.CustomizableEdges = customizableEdges7;
+            guna2Panel5.FillColor = Color.FromArgb(46, 125, 82);
+            guna2Panel5.Location = new Point(0, 33);
+            guna2Panel5.Name = "guna2Panel5";
+            guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2Panel5.Size = new Size(1360, 39);
+            guna2Panel5.TabIndex = 15;
             // 
-            // guna2HtmlLabel3
+            // dtpStart
             // 
-            guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2HtmlLabel3.ForeColor = Color.Black;
-            guna2HtmlLabel3.Location = new Point(322, 91);
-            guna2HtmlLabel3.Margin = new Padding(2);
-            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(44, 27);
-            guna2HtmlLabel3.TabIndex = 21;
-            guna2HtmlLabel3.Text = "Start";
+            dtpStart.Location = new Point(24, 206);
+            dtpStart.Name = "dtpStart";
+            dtpStart.Size = new Size(273, 23);
+            dtpStart.TabIndex = 27;
             // 
-            // guna2HtmlLabel1
+            // cmbDifficulty
             // 
-            guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2HtmlLabel1.ForeColor = Color.Black;
-            guna2HtmlLabel1.Location = new Point(17, 91);
-            guna2HtmlLabel1.Margin = new Padding(2);
-            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(167, 27);
-            guna2HtmlLabel1.TabIndex = 4;
-            guna2HtmlLabel1.Text = "Title of the Activity";
+            cmbDifficulty.BackColor = Color.Transparent;
+            cmbDifficulty.CustomizableEdges = customizableEdges9;
+            cmbDifficulty.DrawMode = DrawMode.OwnerDrawFixed;
+            cmbDifficulty.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbDifficulty.FocusedColor = Color.FromArgb(94, 148, 255);
+            cmbDifficulty.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cmbDifficulty.Font = new Font("Segoe UI", 10F);
+            cmbDifficulty.ForeColor = Color.FromArgb(68, 88, 112);
+            cmbDifficulty.ItemHeight = 30;
+            cmbDifficulty.Items.AddRange(new object[] { "Easy", "Moderate", "Hard" });
+            cmbDifficulty.Location = new Point(24, 289);
+            cmbDifficulty.Name = "cmbDifficulty";
+            cmbDifficulty.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            cmbDifficulty.Size = new Size(562, 36);
+            cmbDifficulty.TabIndex = 25;
             // 
             // txtTitle
             // 
-            txtTitle.CustomizableEdges = customizableEdges9;
+            txtTitle.CustomizableEdges = customizableEdges11;
             txtTitle.DefaultText = "";
             txtTitle.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtTitle.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -304,23 +267,62 @@
             txtTitle.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTitle.Font = new Font("Segoe UI", 9F);
             txtTitle.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTitle.Location = new Point(17, 123);
+            txtTitle.Location = new Point(24, 117);
             txtTitle.Name = "txtTitle";
             txtTitle.PlaceholderText = "";
             txtTitle.SelectedText = "";
-            txtTitle.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtTitle.Size = new Size(300, 53);
+            txtTitle.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtTitle.Size = new Size(562, 43);
             txtTitle.TabIndex = 16;
             // 
-            // guna2Panel5
+            // guna2HtmlLabel4
             // 
-            guna2Panel5.CustomizableEdges = customizableEdges11;
-            guna2Panel5.FillColor = Color.FromArgb(46, 125, 82);
-            guna2Panel5.Location = new Point(0, 33);
-            guna2Panel5.Name = "guna2Panel5";
-            guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Panel5.Size = new Size(1360, 39);
-            guna2Panel5.TabIndex = 15;
+            guna2HtmlLabel4.BackColor = Color.Transparent;
+            guna2HtmlLabel4.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2HtmlLabel4.ForeColor = Color.Black;
+            guna2HtmlLabel4.Location = new Point(24, 247);
+            guna2HtmlLabel4.Margin = new Padding(2);
+            guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            guna2HtmlLabel4.Size = new Size(83, 27);
+            guna2HtmlLabel4.TabIndex = 22;
+            guna2HtmlLabel4.Text = "Difficulty";
+            guna2HtmlLabel4.Click += guna2HtmlLabel4_Click;
+            // 
+            // guna2HtmlLabel1
+            // 
+            guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2HtmlLabel1.ForeColor = Color.Black;
+            guna2HtmlLabel1.Location = new Point(24, 82);
+            guna2HtmlLabel1.Margin = new Padding(2);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(167, 27);
+            guna2HtmlLabel1.TabIndex = 4;
+            guna2HtmlLabel1.Text = "Title of the Activity";
+            // 
+            // guna2HtmlLabel5
+            // 
+            guna2HtmlLabel5.BackColor = Color.Transparent;
+            guna2HtmlLabel5.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2HtmlLabel5.ForeColor = Color.Black;
+            guna2HtmlLabel5.Location = new Point(313, 169);
+            guna2HtmlLabel5.Margin = new Padding(2);
+            guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            guna2HtmlLabel5.Size = new Size(84, 27);
+            guna2HtmlLabel5.TabIndex = 23;
+            guna2HtmlLabel5.Text = "Due Date";
+            // 
+            // guna2HtmlLabel3
+            // 
+            guna2HtmlLabel3.BackColor = Color.Transparent;
+            guna2HtmlLabel3.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2HtmlLabel3.ForeColor = Color.Black;
+            guna2HtmlLabel3.Location = new Point(24, 174);
+            guna2HtmlLabel3.Margin = new Padding(2);
+            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            guna2HtmlLabel3.Size = new Size(90, 27);
+            guna2HtmlLabel3.TabIndex = 21;
+            guna2HtmlLabel3.Text = "Start Date";
             // 
             // guna2Elipse1
             // 
@@ -631,7 +633,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1384, 861);
+            ClientSize = new Size(1858, 984);
             Controls.Add(guna2ShadowPanel1);
             Controls.Add(guna2Panel4);
             Controls.Add(guna2ShadowPanel5);

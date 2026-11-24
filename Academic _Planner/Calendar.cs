@@ -100,5 +100,10 @@ namespace Academic__Planner
             statsForm.Show();
             this.Hide();
         }
+
+        private void guna2HtmlLabel4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
