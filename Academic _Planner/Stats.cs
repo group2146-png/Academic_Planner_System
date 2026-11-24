@@ -36,7 +36,7 @@ namespace Academic__Planner
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            Form2 activitiesForm = new Form2();
+            My_Activities activitiesForm = new My_Activities();
             activitiesForm.Show();
             this.Hide();
         }

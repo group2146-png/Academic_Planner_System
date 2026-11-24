@@ -55,8 +55,31 @@ namespace Academic__Planner
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            
+            if (string.IsNullOrWhiteSpace(txtTitle.Text) || cmbDifficulty.SelectedItem == null)
+            {
+                MessageBox.Show("Please enter a title and choose a difficulty.");
+                return;
+            }
+
+            if (dtpEnd.Value < dtpStart.Value)
+            {
+                MessageBox.Show("End date can't be before the start date.");
+                return;
+            }
+
+            ActivityStore.Items.Add(new Activity
+            {
+                Title = txtTitle.Text.Trim(),
+                Difficulty = cmbDifficulty.SelectedItem.ToString(),
+                Start = dtpStart.Value,
+                End = dtpEnd.Value
+            });
+
+            txtTitle.Clear();
+            cmbDifficulty.SelectedIndex = -1;
+            MessageBox.Show("Activity saved!");
         }
+        
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
@@ -89,7 +112,7 @@ namespace Academic__Planner
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            Form2 activitiesForm = new Form2();
+            My_Activities activitiesForm = new My_Activities();
             activitiesForm.Show();
             this.Hide();
         }
@@ -104,6 +127,11 @@ namespace Academic__Planner
         private void guna2HtmlLabel4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void monthCalendar1_DateChanged_1(object sender, DateRangeEventArgs e)
+        {
+            
         }
     }
 }

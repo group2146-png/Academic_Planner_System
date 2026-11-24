@@ -281,7 +281,7 @@
             BackColor = Color.White;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1473, 751);
+            ClientSize = new Size(1384, 861);
             Controls.Add(guna2ShadowPanel1);
             ForeColor = Color.FromArgb(54, 176, 51);
             Margin = new Padding(2);

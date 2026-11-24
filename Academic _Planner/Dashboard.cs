@@ -45,7 +45,7 @@ namespace Academic__Planner
         // MY ACTIVITIES BUTTON
         private void btnMyActivities_ButtonClick(object sender, EventArgs e)
         {
-            OpenChildForm(new Form2());
+            OpenChildForm(new My_Activities());
         }
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
@@ -122,7 +122,7 @@ namespace Academic__Planner
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            Form2 activitiesForm = new Form2();
+            My_Activities activitiesForm = new My_Activities();
             activitiesForm.Show();
             this.Hide();
 
@@ -143,6 +143,28 @@ namespace Academic__Planner
         private void guna2HtmlLabel16_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+            My_Activities activitiesForm = new My_Activities();
+            activitiesForm.Show();
+            this.Hide();
+        }
+
+        private void guna2Button9_Click(object sender, EventArgs e)
+        {
+            var confirm = MessageBox.Show("Are you sure you want to logout?", "Logout",
+        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (confirm != DialogResult.Yes) return;
+
+            Login loginForm = Application.OpenForms.OfType<Login>().FirstOrDefault();
+            if (loginForm == null)
+                loginForm = new Login();
+
+            loginForm.Show();
+            this.Hide();
         }
     }
 }

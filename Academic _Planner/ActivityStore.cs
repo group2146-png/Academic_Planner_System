@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class ActivityItem
+public class Activity
 {
     public string Title { get; set; }
-    public DateTime StartAt { get; set; }
     public string Difficulty { get; set; }
-    public DateTime EndAt { get; set; }
-    public string Status { get; set; } = "Pending";
+    public DateTime Start { get; set; }
+    public DateTime End { get; set; }
+    public bool IsCompleted { get; set; } = false;   // false = Pending
 }
 
 public static class ActivityStore
 {
-    public static List<ActivityItem> Activities = new List<ActivityItem>();
+    public static List<Activity> Items = new List<Activity>();
 }

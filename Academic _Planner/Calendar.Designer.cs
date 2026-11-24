@@ -266,7 +266,7 @@
             guna2ShadowPanel1.ShadowColor = Color.Black;
             guna2ShadowPanel1.ShadowDepth = 50;
             guna2ShadowPanel1.ShadowShift = 2;
-            guna2ShadowPanel1.Size = new Size(675, 506);
+            guna2ShadowPanel1.Size = new Size(675, 419);
             guna2ShadowPanel1.TabIndex = 18;
             guna2ShadowPanel1.Paint += guna2ShadowPanel1_Paint;
             // 
