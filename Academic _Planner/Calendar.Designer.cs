@@ -39,6 +39,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calendar));
             button1 = new Button();
             guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
@@ -57,9 +61,11 @@
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Panel4.SuspendLayout();
             guna2ShadowPanel5.SuspendLayout();
-            guna2ShadowPanel1.SuspendLayout();
+            guna2Panel2.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -253,9 +259,8 @@
             // guna2ShadowPanel1
             // 
             guna2ShadowPanel1.BackColor = Color.Transparent;
-            guna2ShadowPanel1.Controls.Add(guna2HtmlLabel6);
-            guna2ShadowPanel1.FillColor = Color.White;
-            guna2ShadowPanel1.Location = new Point(34, 61);
+            guna2ShadowPanel1.FillColor = SystemColors.Window;
+            guna2ShadowPanel1.Location = new Point(53, 98);
             guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             guna2ShadowPanel1.Radius = 10;
             guna2ShadowPanel1.ShadowColor = Color.Black;
@@ -268,14 +273,37 @@
             // guna2HtmlLabel6
             // 
             guna2HtmlLabel6.BackColor = Color.Transparent;
-            guna2HtmlLabel6.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2HtmlLabel6.ForeColor = Color.Black;
-            guna2HtmlLabel6.Location = new Point(23, 23);
+            guna2HtmlLabel6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2HtmlLabel6.ForeColor = Color.White;
+            guna2HtmlLabel6.Location = new Point(15, 2);
             guna2HtmlLabel6.Margin = new Padding(2);
             guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            guna2HtmlLabel6.Size = new Size(79, 27);
+            guna2HtmlLabel6.Size = new Size(82, 27);
             guna2HtmlLabel6.TabIndex = 29;
             guna2HtmlLabel6.Text = "Calendar";
+            // 
+            // guna2Panel1
+            // 
+            guna2Panel1.BackColor = Color.White;
+            guna2Panel1.BorderRadius = 15;
+            guna2Panel1.CustomizableEdges = customizableEdges11;
+            guna2Panel1.FillColor = Color.FromArgb(46, 125, 82);
+            guna2Panel1.Location = new Point(53, 64);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2Panel1.Size = new Size(675, 50);
+            guna2Panel1.TabIndex = 18;
+            // 
+            // guna2Panel2
+            // 
+            guna2Panel2.Controls.Add(guna2HtmlLabel6);
+            guna2Panel2.CustomizableEdges = customizableEdges13;
+            guna2Panel2.FillColor = Color.FromArgb(46, 125, 82);
+            guna2Panel2.Location = new Point(53, 87);
+            guna2Panel2.Name = "guna2Panel2";
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            guna2Panel2.Size = new Size(675, 41);
+            guna2Panel2.TabIndex = 16;
             // 
             // Calendar
             // 
@@ -283,6 +311,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1384, 861);
+            Controls.Add(guna2Panel2);
+            Controls.Add(guna2Panel1);
             Controls.Add(guna2ShadowPanel1);
             Controls.Add(guna2Panel4);
             Controls.Add(button1);
@@ -296,8 +326,8 @@
             guna2Panel4.PerformLayout();
             guna2ShadowPanel5.ResumeLayout(false);
             guna2ShadowPanel5.PerformLayout();
-            guna2ShadowPanel1.ResumeLayout(false);
-            guna2ShadowPanel1.PerformLayout();
+            guna2Panel2.ResumeLayout(false);
+            guna2Panel2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -319,5 +349,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
     }
 }
