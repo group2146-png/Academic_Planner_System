@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +15,15 @@ namespace Academic__Planner
         public Calendar()
         {
             InitializeComponent();
+
             this.WindowState = FormWindowState.Maximized;
+
+            // DateTimePicker styling and sizing
+            dtpStart.AutoSize = false;
+            dtpEnd.AutoSize = false;
+
+            dtpStart.Size = new Size(250, 45);
+            dtpEnd.Size = new Size(250, 45);
         }
 
         private void guna2ShadowPanel5_Paint(object sender, PaintEventArgs e)
@@ -24,14 +33,16 @@ namespace Academic__Planner
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Dashboard dashboard = Application.OpenForms.OfType<Dashboard>().FirstOrDefault();
+            Dashboard dashboard =
+                Application.OpenForms.OfType<Dashboard>().FirstOrDefault();
+
             if (dashboard == null)
                 dashboard = new Dashboard();
 
             dashboard.Show();
             this.Close();
         }
-        // In Calendar.cs
+
         private void Calendar_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)
@@ -45,7 +56,8 @@ namespace Academic__Planner
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtTitle.Text) || cmbDifficulty.SelectedItem == null)
+            if (string.IsNullOrWhiteSpace(txtTitle.Text) ||
+                cmbDifficulty.SelectedItem == null)
             {
                 MessageBox.Show("Please fill in the title and difficulty.");
                 return;
@@ -65,12 +77,27 @@ namespace Academic__Planner
                 EndAt = dtpEnd.Value
             });
 
-            MessageBox.Show("Activity saved!");
+            MessageBox.Show("Activity saved successfully!");
+
             txtTitle.Clear();
             cmbDifficulty.SelectedIndex = -1;
             dtpStart.Value = DateTime.Now;
             dtpEnd.Value = DateTime.Now;
-            MessageBox.Show("Total saved: " + ActivityStore.Activities.Count);
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void dtpStart_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

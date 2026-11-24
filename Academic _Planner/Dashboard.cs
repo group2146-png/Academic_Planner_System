@@ -135,5 +135,10 @@ namespace Academic__Planner
             statsForm.Show();
             this.Hide();
         }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
