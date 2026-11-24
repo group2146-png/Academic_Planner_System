@@ -255,6 +255,7 @@
             // 
             // guna2ShadowPanel5
             // 
+            guna2ShadowPanel5.AutoScroll = true;
             guna2ShadowPanel5.BackColor = Color.Transparent;
             guna2ShadowPanel5.Controls.Add(guna2Button7);
             guna2ShadowPanel5.Controls.Add(guna2Button6);
@@ -504,6 +505,7 @@
             guna2Button1.Size = new Size(158, 51);
             guna2Button1.TabIndex = 21;
             guna2Button1.Text = "Dashboard";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // pictureBox1
             // 
@@ -1011,7 +1013,7 @@
             BackColor = Color.FromArgb(241, 248, 242);
             BackgroundImage = Properties.Resources.Green_Academic_Waves_Template1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1384, 861);
+            ClientSize = new Size(1437, 702);
             Controls.Add(guna2ShadowPanel9);
             Controls.Add(guna2HtmlLabel17);
             Controls.Add(guna2HtmlLabel16);

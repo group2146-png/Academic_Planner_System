@@ -135,5 +135,12 @@ namespace Academic__Planner
             statsForm.Show();
             this.Hide();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Dashboard DashboardForm = new Dashboard();
+            DashboardForm.Show();
+            this.Hide();
+        }
     }
 }

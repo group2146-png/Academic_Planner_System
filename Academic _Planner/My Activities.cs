@@ -83,5 +83,33 @@ namespace Academic__Planner
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Dashboard DashboardForm = new Dashboard();
+            DashboardForm.Show();
+            this.Hide();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Calendar calendarForm = new Calendar();
+            calendarForm.Show();
+            this.Hide();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            Form2 activitiesForm = new Form2();
+            activitiesForm.Show();
+            this.Hide();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            Stats statsForm = new Stats();
+            statsForm.Show();
+            this.Hide();
+        }
     }
 }
