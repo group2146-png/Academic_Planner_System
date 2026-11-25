@@ -1,12 +1,12 @@
-﻿
+﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Linq;
 
 namespace Academic__Planner
 {
@@ -16,30 +16,17 @@ namespace Academic__Planner
         {
             InitializeComponent();
 
-
             // DateTimePicker styling and sizing
-            dtpStart.AutoSize = false;
-            dtpEnd.AutoSize = false;
+            guna2DateTimePicker1.AutoSize = false;
+            guna2DateTimePicker2.AutoSize = false;
 
-            dtpStart.Size = new Size(250, 45);
-            dtpEnd.Size = new Size(250, 45);
+            guna2DateTimePicker1.Size = new Size(250, 45);
+            guna2DateTimePicker2.Size = new Size(250, 45);
         }
 
-        private void guna2ShadowPanel5_Paint(object sender, PaintEventArgs e)
+        // ---------- FORM EVENTS ----------
+        private void Calendar_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Dashboard dashboard =
-                Application.OpenForms.OfType<Dashboard>().FirstOrDefault();
-
-            if (dashboard == null)
-                dashboard = new Dashboard();
-
-            dashboard.Show();
-            this.Close();
         }
 
         private void Calendar_FormClosed(object sender, FormClosedEventArgs e)
@@ -48,90 +35,133 @@ namespace Academic__Planner
                 Application.Exit();
         }
 
-        private void Calendar_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        // ---------- SAVE ACTIVITY ----------
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtTitle.Text) || cmbDifficulty.SelectedItem == null)
+            if (string.IsNullOrWhiteSpace(guna2TextBox1.Text) || guna2ComboBox1.SelectedItem == null)
             {
                 MessageBox.Show("Please enter a title and choose a difficulty.");
                 return;
             }
 
-            if (dtpEnd.Value < dtpStart.Value)
+            if (guna2DateTimePicker2.Value < guna2DateTimePicker1.Value)
             {
                 MessageBox.Show("End date can't be before the start date.");
                 return;
             }
 
-            ActivityStore.Items.Add(new Activity
+            if (Session.UserId == 0)
             {
-                Title = txtTitle.Text.Trim(),
-                Difficulty = cmbDifficulty.SelectedItem.ToString(),
-                Start = dtpStart.Value,
-                End = dtpEnd.Value
-            });
+                MessageBox.Show("No user is logged in. Please log in again.");
+                return;
+            }
 
-            txtTitle.Clear();
-            cmbDifficulty.SelectedIndex = -1;
-            MessageBox.Show("Activity saved!");
+            string title = guna2TextBox1.Text.Trim();
+            string difficulty = guna2ComboBox1.SelectedItem.ToString();
+            DateTime start = guna2DateTimePicker1.Value;
+            DateTime end = guna2DateTimePicker2.Value;
+
+            try
+            {
+                // 1. I-save sa database
+                using (var conn = new SqlConnection(Db.ConnectionString))
+                {
+                    conn.Open();
+                    using (var cmd = new SqlCommand(
+                        @"INSERT INTO Activities (UserId, Title, Difficulty, StartDate, EndDate)
+                          VALUES (@uid, @title, @diff, @start, @end)", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@uid", Session.UserId);
+                        cmd.Parameters.AddWithValue("@title", title);
+                        cmd.Parameters.AddWithValue("@diff", difficulty);
+                        cmd.Parameters.AddWithValue("@start", start);
+                        cmd.Parameters.AddWithValue("@end", end);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+
+                // 2. I-add din sa ActivityStore para makita agad sa ibang forms
+                ActivityStore.Items.Add(new Activity
+                {
+                    Title = title,
+                    Difficulty = difficulty,
+                    Start = start,
+                    End = end
+                });
+
+                guna2TextBox1.Clear();
+                guna2ComboBox1.SelectedIndex = -1;
+                MessageBox.Show("Activity saved!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
-        
 
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        // ---------- NAVIGATION ----------
+        private void button1_Click(object sender, EventArgs e)   // Back button
         {
+            Dashboard dashboard = Application.OpenForms.OfType<Dashboard>().FirstOrDefault();
 
+            if (dashboard == null)
+                dashboard = new Dashboard();
+
+            dashboard.Show();
+            this.Close();
         }
 
-        private void dtpStart_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)   // Dashboard
         {
             Dashboard DashboardForm = new Dashboard();
             DashboardForm.Show();
             this.Hide();
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void guna2Button2_Click(object sender, EventArgs e)   // Calendar
         {
             Calendar calendarForm = new Calendar();
             calendarForm.Show();
             this.Hide();
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void guna2Button3_Click(object sender, EventArgs e)   // My Activities
         {
             My_Activities activitiesForm = new My_Activities();
             activitiesForm.Show();
             this.Hide();
         }
 
-        private void guna2Button4_Click(object sender, EventArgs e)
+        private void guna2Button4_Click(object sender, EventArgs e)   // Stats
         {
             Stats statsForm = new Stats();
             statsForm.Show();
             this.Hide();
         }
 
-        private void guna2HtmlLabel4_Click(object sender, EventArgs e)
+        // ---------- EVENTS NA HINAHANAP NG DESIGNER (huwag burahin) ----------
+        private void dtpStart_ValueChanged(object sender, EventArgs e)
         {
+        }
 
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
+        private void guna2ShadowPanel5_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
         }
 
         private void monthCalendar1_DateChanged_1(object sender, DateRangeEventArgs e)
         {
-            
+        }
+
+        private void guna2HtmlLabel4_Click(object sender, EventArgs e)
+        {
         }
     }
 }

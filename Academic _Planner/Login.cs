@@ -1,5 +1,4 @@
-﻿using Academic_Planner;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -72,6 +71,10 @@ namespace Academic__Planner
 
                         if (result != null)
                         {
+                            Session.UserId = (int)result;
+                            Session.Username = username;
+                            Db.LoadActivitiesForUser(Session.UserId);
+
                             new Dashboard().Show();
                             this.Hide();
                         }

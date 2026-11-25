@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -59,7 +58,21 @@ namespace Academic__Planner
                     btn.Click += (s, e) => { page = pageNumber; RenderPage(); };
             }
 
-            this.Load += (s, e) => RenderPage();
+            this.Load += (s, e) =>
+            {
+                // Kunin ulit sa database ang activities ng naka-login na user
+                try
+                {
+                    if (Session.UserId != 0)
+                        Db.LoadActivitiesForUser(Session.UserId);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error loading activities: " + ex.Message);
+                }
+
+                RenderPage();
+            };
         }
 
         // Collects every Guna2Button on the form, even inside panels
@@ -114,31 +127,56 @@ namespace Academic__Planner
             }
         }
 
+        // STEP 7: sine-save na sa database ang Complete
         private void CompleteRow(int row)
         {
             int index = page * PageSize + row;
             if (index >= ActivityStore.Items.Count) return;
 
-            ActivityStore.Items[index].IsCompleted = true;
-            RenderPage();
+            var activity = ActivityStore.Items[index];
+
+            try
+            {
+                Db.MarkActivityDone(activity.Id);   // i-save sa database
+                activity.IsCompleted = true;
+                RenderPage();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
+        // ---------- EVENTS NA HINAHANAP NG DESIGNER (huwag burahin) ----------
         private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
         }
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void guna2Panel4_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
+        private void guna2HtmlLabel26_Click(object sender, EventArgs e)
+        {
+        }
+
+        // ---------- FORM CLOSED ----------
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+                Application.Exit();
+        }
+
+        // ---------- NAVIGATION ----------
+        private void button1_Click(object sender, EventArgs e)   // Back button
         {
             Dashboard dashboard = Application.OpenForms.OfType<Dashboard>().FirstOrDefault();
             if (dashboard == null)
@@ -148,48 +186,29 @@ namespace Academic__Planner
             this.Close();
         }
 
-        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-                Application.Exit();
-        }
-
-        private void guna2Panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)   // Dashboard
         {
             Dashboard DashboardForm = new Dashboard();
             DashboardForm.Show();
             this.Hide();
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void guna2Button2_Click(object sender, EventArgs e)   // Calendar
         {
             Calendar calendarForm = new Calendar();
             calendarForm.Show();
             this.Hide();
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void guna2Button3_Click(object sender, EventArgs e)   // My Activities (nandito ka na)
         {
-            My_Activities activitiesForm = new My_Activities();
-            activitiesForm.Show();
-            this.Hide();
         }
 
-        private void guna2Button4_Click(object sender, EventArgs e)
+        private void guna2Button4_Click(object sender, EventArgs e)   // Stats
         {
             Stats statsForm = new Stats();
             statsForm.Show();
             this.Hide();
-        }
-
-        private void guna2HtmlLabel26_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -1,5 +1,4 @@
 ﻿
-using Academic_Planner;
 using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
