@@ -16,12 +16,10 @@ namespace Academic__Planner
         {
             InitializeComponent();
 
-            // DateTimePicker styling and sizing
-            guna2DateTimePicker1.AutoSize = false;
-            guna2DateTimePicker2.AutoSize = false;
-
-            guna2DateTimePicker1.Size = new Size(250, 45);
-            guna2DateTimePicker2.Size = new Size(250, 45);
+            cmbMonth.AutoSize = false;
+            cmbMonth.Height = 50;
+            cmbMonth.Width = 300;
+            cmbMonth.Font = new Font("Segoe UI", 14F);
         }
 
         // ---------- FORM EVENTS ----------
@@ -162,6 +160,11 @@ namespace Academic__Planner
 
         private void guna2HtmlLabel4_Click(object sender, EventArgs e)
         {
+        }
+
+        private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
