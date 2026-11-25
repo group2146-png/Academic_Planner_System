@@ -16,10 +16,7 @@ namespace Academic__Planner
         {
             InitializeComponent();
 
-            cmbMonth.AutoSize = false;
-            cmbMonth.Height = 50;
-            cmbMonth.Width = 300;
-            cmbMonth.Font = new Font("Segoe UI", 14F);
+          
         }
 
         // ---------- FORM EVENTS ----------
