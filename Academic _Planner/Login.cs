@@ -1,10 +1,14 @@
-﻿using System;
+﻿using Academic_Planner;
+using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+
+
 
 namespace Academic__Planner
 {
@@ -14,6 +18,7 @@ namespace Academic__Planner
         {
             InitializeComponent();
             CenterLoginPanel();
+            guna2TextBox2.UseSystemPasswordChar = true;
         }
 
         private void CenterLoginPanel()
@@ -42,16 +47,52 @@ namespace Academic__Planner
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Dashboard dashboard = new Dashboard();
-            dashboard.Show();
-            this.Hide();
+            string username = guna2TextBox1.Text.Trim();
+            string password = guna2TextBox2.Text;
+
+            if (username == "" || password == "")
+            {
+                MessageBox.Show("Please enter your username and password.");
+                return;
+            }
+
+            try
+            {
+                using (var conn = new SqlConnection(Db.ConnectionString))
+                {
+                    conn.Open();
+
+                    using (var cmd = new SqlCommand(
+                        "SELECT UserId FROM Users WHERE Username = @u AND PasswordHash = @p", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@u", username);
+                        cmd.Parameters.AddWithValue("@p", Db.HashPassword(password));
+
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            new Dashboard().Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid username or password.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            Form1 signUp = Application.OpenForms.OfType<Form1>().FirstOrDefault();
+            signup signUp = Application.OpenForms.OfType<signup>().FirstOrDefault();
             if (signUp == null)
-                signUp = new Form1();
+                signUp = new signup();
 
             signUp.Show();
             this.Hide();

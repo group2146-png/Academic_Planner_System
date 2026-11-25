@@ -1,6 +1,6 @@
 ﻿namespace Academic__Planner
 {
-    partial class Form1
+    partial class signup
     {
         /// <summary>
         /// Required designer variable.
@@ -124,6 +124,7 @@
             guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2TextBox3.Size = new Size(203, 47);
             guna2TextBox3.TabIndex = 4;
+            guna2TextBox3.TextChanged += guna2TextBox3_TextChanged;
             // 
             // guna2HtmlLabel5
             // 
@@ -153,6 +154,7 @@
             guna2Button1.Size = new Size(372, 57);
             guna2Button1.TabIndex = 7;
             guna2Button1.Text = "Sign Up";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // guna2HtmlLabel2
             // 
@@ -286,7 +288,7 @@
             guna2Button2.Text = "Login";
             guna2Button2.Click += guna2Button2_Click;
             // 
-            // Form1
+            // signup
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -294,8 +296,9 @@
             ClientSize = new Size(1384, 861);
             Controls.Add(guna2ShadowPanel1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Name = "Form1";
+            Name = "signup";
             Text = "Signup";
+            Load += signup_Load;
             guna2ShadowPanel1.ResumeLayout(false);
             guna2ShadowPanel1.PerformLayout();
             guna2ShadowPanel4.ResumeLayout(false);
