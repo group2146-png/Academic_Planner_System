@@ -166,5 +166,41 @@ namespace Academic__Planner
             loginForm.Show();
             this.Hide();
         }
+
+        private void guna2ImageButton2_Click(object sender, EventArgs e)
+        {
+            Profile profileForm = new Profile();
+            profileForm.Show();
+            this.Hide();
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            Settings settingsForm = new Settings();
+            settingsForm.Show();
+            this.Hide();
+        }
+
+        private void guna2Button6_Click_1(object sender, EventArgs e)
+        {
+            About aboutForm = new About();
+            aboutForm.Show();
+            this.Hide();
+        }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            var confirm = MessageBox.Show("Are you sure you want to logout?", "Logout",
+        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (confirm != DialogResult.Yes) return;
+
+            Login loginForm = Application.OpenForms.OfType<Login>().FirstOrDefault();
+            if (loginForm == null)
+                loginForm = new Login();
+
+            loginForm.Show();
+            this.Close();
+        }
     }
 }

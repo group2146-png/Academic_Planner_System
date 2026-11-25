@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,16 @@ namespace Academic__Planner
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Login login = Application.OpenForms.OfType<Login>().FirstOrDefault();
+            if (login == null)
+                login = new Login();
+
+            login.Show();
+            this.Hide();
         }
     }
 }

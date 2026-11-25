@@ -14,5 +14,15 @@ namespace Academic__Planner
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = Application.OpenForms.OfType<Dashboard>().FirstOrDefault();
+            if (dashboard == null)
+                dashboard = new Dashboard();
+
+            dashboard.Show();
+            this.Close();
+        }
     }
 }

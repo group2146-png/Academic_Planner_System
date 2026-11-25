@@ -281,6 +281,7 @@
             guna2Button2.Size = new Size(76, 26);
             guna2Button2.TabIndex = 15;
             guna2Button2.Text = "Sign Up";
+            guna2Button2.Click += guna2Button2_Click;
             // 
             // Login
             // 

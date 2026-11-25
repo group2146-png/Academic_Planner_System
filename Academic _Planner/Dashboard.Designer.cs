@@ -258,6 +258,7 @@
             guna2Button7.Size = new Size(158, 51);
             guna2Button7.TabIndex = 24;
             guna2Button7.Text = "Logout";
+            guna2Button7.Click += guna2Button7_Click;
             // 
             // guna2Button6
             // 
@@ -275,6 +276,7 @@
             guna2Button6.Size = new Size(158, 51);
             guna2Button6.TabIndex = 23;
             guna2Button6.Text = "About";
+            guna2Button6.Click += guna2Button6_Click_1;
             // 
             // pictureBox6
             // 
@@ -303,6 +305,7 @@
             guna2Button5.Size = new Size(158, 51);
             guna2Button5.TabIndex = 23;
             guna2Button5.Text = "Settings";
+            guna2Button5.Click += guna2Button5_Click;
             // 
             // guna2Panel5
             // 
@@ -788,6 +791,7 @@
             guna2ImageButton2.ShadowDecoration.CustomizableEdges = customizableEdges45;
             guna2ImageButton2.Size = new Size(40, 40);
             guna2ImageButton2.TabIndex = 25;
+            guna2ImageButton2.Click += guna2ImageButton2_Click;
             // 
             // guna2ShadowPanel10
             // 

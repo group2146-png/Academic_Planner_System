@@ -46,5 +46,16 @@ namespace Academic__Planner
             dashboard.Show();
             this.Hide();
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Form1 signUp = Application.OpenForms.OfType<Form1>().FirstOrDefault();
+            if (signUp == null)
+                signUp = new Form1();
+
+            signUp.Show();
+            this.Hide();
+
+        }
     }
 }
