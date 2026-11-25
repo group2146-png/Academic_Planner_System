@@ -126,6 +126,7 @@
             guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -162,7 +163,6 @@
             guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
-            guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Panel4.SuspendLayout();
             guna2ShadowPanel5.SuspendLayout();
             guna2ShadowPanel1.SuspendLayout();
@@ -238,6 +238,7 @@
             // 
             // guna2Button1
             // 
+            guna2Button1.BorderRadius = 10;
             guna2Button1.CustomizableEdges = customizableEdges3;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -289,7 +290,7 @@
             // 
             guna2DateTimePicker1.Location = new Point(17, 281);
             guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            guna2DateTimePicker1.Size = new Size(183, 23);
+            guna2DateTimePicker1.Size = new Size(283, 23);
             guna2DateTimePicker1.TabIndex = 27;
             guna2DateTimePicker1.ValueChanged += dtpStart_ValueChanged;
             // 
@@ -327,7 +328,7 @@
             // 
             guna2DateTimePicker2.Location = new Point(17, 340);
             guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            guna2DateTimePicker2.Size = new Size(183, 23);
+            guna2DateTimePicker2.Size = new Size(283, 23);
             guna2DateTimePicker2.TabIndex = 28;
             // 
             // guna2HtmlLabel1
@@ -406,6 +407,16 @@
             guna2ShadowPanel1.Size = new Size(1035, 650);
             guna2ShadowPanel1.TabIndex = 18;
             guna2ShadowPanel1.Paint += guna2ShadowPanel1_Paint;
+            // 
+            // guna2HtmlLabel7
+            // 
+            guna2HtmlLabel7.BackColor = Color.Transparent;
+            guna2HtmlLabel7.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2HtmlLabel7.Location = new Point(185, 113);
+            guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            guna2HtmlLabel7.Size = new Size(82, 19);
+            guna2HtmlLabel7.TabIndex = 55;
+            guna2HtmlLabel7.Text = "Current Date";
             // 
             // guna2ComboBox2
             // 
@@ -1066,16 +1077,6 @@
             guna2TileButton1.Size = new Size(130, 85);
             guna2TileButton1.TabIndex = 0;
             guna2TileButton1.Text = "guna2TileButton1";
-            // 
-            // guna2HtmlLabel7
-            // 
-            guna2HtmlLabel7.BackColor = Color.Transparent;
-            guna2HtmlLabel7.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2HtmlLabel7.Location = new Point(185, 113);
-            guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            guna2HtmlLabel7.Size = new Size(82, 19);
-            guna2HtmlLabel7.TabIndex = 55;
-            guna2HtmlLabel7.Text = "Current Date";
             // 
             // Calendar
             // 

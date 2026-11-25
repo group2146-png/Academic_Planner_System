@@ -223,6 +223,26 @@ namespace Academic__Planner.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Green_Growth_Analytics_Icon {
+            get {
+                object obj = ResourceManager.GetObject("Green Growth Analytics Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Green_Growth_Analytics_Icon1 {
+            get {
+                object obj = ResourceManager.GetObject("Green Growth Analytics Icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap layout_dashboard_white {
             get {
                 object obj = ResourceManager.GetObject("layout-dashboard-white", resourceCulture);
@@ -276,6 +296,26 @@ namespace Academic__Planner.Properties {
         internal static System.Drawing.Bitmap Pastel_Green_Academic_Stationery_Background2 {
             get {
                 object obj = ResourceManager.GetObject("Pastel Green Academic Stationery Background2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pastel_Green_Academic_Stationery_Background3 {
+            get {
+                object obj = ResourceManager.GetObject("Pastel Green Academic Stationery Background3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pastel_Green_Academic_Stationery_Background4 {
+            get {
+                object obj = ResourceManager.GetObject("Pastel Green Academic Stationery Background4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
