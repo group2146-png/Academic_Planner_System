@@ -263,6 +263,16 @@ namespace Academic__Planner.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Minimal_White_Notification_Bell_Icon {
+            get {
+                object obj = ResourceManager.GetObject("Minimal White Notification Bell Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Mint_Academic_Planner_Sidebar {
             get {
                 object obj = ResourceManager.GetObject("Mint Academic Planner Sidebar", resourceCulture);

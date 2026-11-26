@@ -600,18 +600,18 @@ namespace Academic__Planner
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             btnEnableNotif = new Guna2Button();
             cardOverdue = new Guna2ShadowPanel();
-            cardToday = new Guna2ShadowPanel();
-            cardUpcoming = new Guna2ShadowPanel();
-            guna2HtmlLabel1 = new Guna2HtmlLabel();
-            guna2HtmlLabel2 = new Guna2HtmlLabel();
-            guna2HtmlLabel3 = new Guna2HtmlLabel();
-            flpOverdue = new FlowLayoutPanel();
-            flpToday = new FlowLayoutPanel();
-            flpUpcoming = new FlowLayoutPanel();
             lblEmptyOverdue = new Guna2HtmlLabel();
+            flpOverdue = new FlowLayoutPanel();
+            guna2HtmlLabel1 = new Guna2HtmlLabel();
+            cardToday = new Guna2ShadowPanel();
             lblEmptyToday = new Guna2HtmlLabel();
-            lblEmptyUpcoming = new Guna2HtmlLabel();
+            flpToday = new FlowLayoutPanel();
+            guna2HtmlLabel2 = new Guna2HtmlLabel();
+            cardUpcoming = new Guna2ShadowPanel();
             guna2CircleButton1 = new Guna2CircleButton();
+            lblEmptyUpcoming = new Guna2HtmlLabel();
+            flpUpcoming = new FlowLayoutPanel();
+            guna2HtmlLabel3 = new Guna2HtmlLabel();
             btnBell = new Guna2CircleButton();
             lblBellBadge = new Guna2HtmlLabel();
             txtSearch = new Guna2TextBox();
@@ -629,7 +629,7 @@ namespace Academic__Planner
             btnEnableNotif.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnEnableNotif.Font = new Font("Segoe UI", 9F);
             btnEnableNotif.ForeColor = Color.White;
-            btnEnableNotif.Location = new Point(1151, 49);
+            btnEnableNotif.Location = new Point(1012, 49);
             btnEnableNotif.Name = "btnEnableNotif";
             btnEnableNotif.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnEnableNotif.Size = new Size(180, 45);
@@ -650,6 +650,34 @@ namespace Academic__Planner
             cardOverdue.Size = new Size(1303, 187);
             cardOverdue.TabIndex = 1;
             // 
+            // lblEmptyOverdue
+            // 
+            lblEmptyOverdue.BackColor = Color.Transparent;
+            lblEmptyOverdue.Location = new Point(591, 141);
+            lblEmptyOverdue.Name = "lblEmptyOverdue";
+            lblEmptyOverdue.Size = new Size(97, 17);
+            lblEmptyOverdue.TabIndex = 4;
+            lblEmptyOverdue.Text = "guna2HtmlLabel4";
+            // 
+            // flpOverdue
+            // 
+            flpOverdue.AutoScroll = true;
+            flpOverdue.FlowDirection = FlowDirection.TopDown;
+            flpOverdue.Location = new Point(37, 58);
+            flpOverdue.Name = "flpOverdue";
+            flpOverdue.Size = new Size(200, 100);
+            flpOverdue.TabIndex = 1;
+            flpOverdue.WrapContents = false;
+            // 
+            // guna2HtmlLabel1
+            // 
+            guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Location = new Point(37, 26);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(48, 17);
+            guna2HtmlLabel1.TabIndex = 0;
+            guna2HtmlLabel1.Text = "Overdue";
+            // 
             // cardToday
             // 
             cardToday.BackColor = Color.Transparent;
@@ -663,6 +691,34 @@ namespace Academic__Planner
             cardToday.ShadowColor = Color.Black;
             cardToday.Size = new Size(1303, 187);
             cardToday.TabIndex = 2;
+            // 
+            // lblEmptyToday
+            // 
+            lblEmptyToday.BackColor = Color.Transparent;
+            lblEmptyToday.Location = new Point(591, 128);
+            lblEmptyToday.Name = "lblEmptyToday";
+            lblEmptyToday.Size = new Size(97, 17);
+            lblEmptyToday.TabIndex = 5;
+            lblEmptyToday.Text = "guna2HtmlLabel5";
+            // 
+            // flpToday
+            // 
+            flpToday.AutoScroll = true;
+            flpToday.FlowDirection = FlowDirection.TopDown;
+            flpToday.Location = new Point(37, 45);
+            flpToday.Name = "flpToday";
+            flpToday.Size = new Size(200, 100);
+            flpToday.TabIndex = 2;
+            flpToday.WrapContents = false;
+            // 
+            // guna2HtmlLabel2
+            // 
+            guna2HtmlLabel2.BackColor = Color.Transparent;
+            guna2HtmlLabel2.Location = new Point(37, 22);
+            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            guna2HtmlLabel2.Size = new Size(36, 17);
+            guna2HtmlLabel2.TabIndex = 0;
+            guna2HtmlLabel2.Text = "Today";
             // 
             // cardUpcoming
             // 
@@ -678,90 +734,6 @@ namespace Academic__Planner
             cardUpcoming.ShadowColor = Color.Black;
             cardUpcoming.Size = new Size(1303, 187);
             cardUpcoming.TabIndex = 3;
-            // 
-            // guna2HtmlLabel1
-            // 
-            guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Location = new Point(37, 26);
-            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(48, 17);
-            guna2HtmlLabel1.TabIndex = 0;
-            guna2HtmlLabel1.Text = "Overdue";
-            // 
-            // guna2HtmlLabel2
-            // 
-            guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Location = new Point(37, 22);
-            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(36, 17);
-            guna2HtmlLabel2.TabIndex = 0;
-            guna2HtmlLabel2.Text = "Today";
-            // 
-            // guna2HtmlLabel3
-            // 
-            guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Location = new Point(37, 28);
-            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(59, 17);
-            guna2HtmlLabel3.TabIndex = 1;
-            guna2HtmlLabel3.Text = "Upcoming";
-            // 
-            // flpOverdue
-            // 
-            flpOverdue.AutoScroll = true;
-            flpOverdue.FlowDirection = FlowDirection.TopDown;
-            flpOverdue.Location = new Point(37, 58);
-            flpOverdue.Name = "flpOverdue";
-            flpOverdue.Size = new Size(200, 100);
-            flpOverdue.TabIndex = 1;
-            flpOverdue.WrapContents = false;
-            // 
-            // flpToday
-            // 
-            flpToday.AutoScroll = true;
-            flpToday.FlowDirection = FlowDirection.TopDown;
-            flpToday.Location = new Point(37, 45);
-            flpToday.Name = "flpToday";
-            flpToday.Size = new Size(200, 100);
-            flpToday.TabIndex = 2;
-            flpToday.WrapContents = false;
-            // 
-            // flpUpcoming
-            // 
-            flpUpcoming.AutoScroll = true;
-            flpUpcoming.FlowDirection = FlowDirection.TopDown;
-            flpUpcoming.Location = new Point(59, 61);
-            flpUpcoming.Name = "flpUpcoming";
-            flpUpcoming.Size = new Size(200, 100);
-            flpUpcoming.TabIndex = 2;
-            flpUpcoming.WrapContents = false;
-            // 
-            // lblEmptyOverdue
-            // 
-            lblEmptyOverdue.BackColor = Color.Transparent;
-            lblEmptyOverdue.Location = new Point(591, 141);
-            lblEmptyOverdue.Name = "lblEmptyOverdue";
-            lblEmptyOverdue.Size = new Size(97, 17);
-            lblEmptyOverdue.TabIndex = 4;
-            lblEmptyOverdue.Text = "guna2HtmlLabel4";
-            // 
-            // lblEmptyToday
-            // 
-            lblEmptyToday.BackColor = Color.Transparent;
-            lblEmptyToday.Location = new Point(591, 128);
-            lblEmptyToday.Name = "lblEmptyToday";
-            lblEmptyToday.Size = new Size(97, 17);
-            lblEmptyToday.TabIndex = 5;
-            lblEmptyToday.Text = "guna2HtmlLabel5";
-            // 
-            // lblEmptyUpcoming
-            // 
-            lblEmptyUpcoming.BackColor = Color.Transparent;
-            lblEmptyUpcoming.Location = new Point(591, 144);
-            lblEmptyUpcoming.Name = "lblEmptyUpcoming";
-            lblEmptyUpcoming.Size = new Size(97, 17);
-            lblEmptyUpcoming.TabIndex = 5;
-            lblEmptyUpcoming.Text = "guna2HtmlLabel6";
             // 
             // guna2CircleButton1
             // 
@@ -779,6 +751,34 @@ namespace Academic__Planner
             guna2CircleButton1.TabIndex = 4;
             guna2CircleButton1.Text = "guna2CircleButton1";
             // 
+            // lblEmptyUpcoming
+            // 
+            lblEmptyUpcoming.BackColor = Color.Transparent;
+            lblEmptyUpcoming.Location = new Point(591, 144);
+            lblEmptyUpcoming.Name = "lblEmptyUpcoming";
+            lblEmptyUpcoming.Size = new Size(97, 17);
+            lblEmptyUpcoming.TabIndex = 5;
+            lblEmptyUpcoming.Text = "guna2HtmlLabel6";
+            // 
+            // flpUpcoming
+            // 
+            flpUpcoming.AutoScroll = true;
+            flpUpcoming.FlowDirection = FlowDirection.TopDown;
+            flpUpcoming.Location = new Point(59, 61);
+            flpUpcoming.Name = "flpUpcoming";
+            flpUpcoming.Size = new Size(200, 100);
+            flpUpcoming.TabIndex = 2;
+            flpUpcoming.WrapContents = false;
+            // 
+            // guna2HtmlLabel3
+            // 
+            guna2HtmlLabel3.BackColor = Color.Transparent;
+            guna2HtmlLabel3.Location = new Point(37, 28);
+            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            guna2HtmlLabel3.Size = new Size(59, 17);
+            guna2HtmlLabel3.TabIndex = 1;
+            guna2HtmlLabel3.Text = "Upcoming";
+            // 
             // btnBell
             // 
             btnBell.DisabledState.BorderColor = Color.DarkGray;
@@ -787,7 +787,7 @@ namespace Academic__Planner
             btnBell.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnBell.Font = new Font("Segoe UI", 9F);
             btnBell.ForeColor = Color.White;
-            btnBell.Location = new Point(1380, 49);
+            btnBell.Location = new Point(1334, 49);
             btnBell.Name = "btnBell";
             btnBell.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnBell.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -798,7 +798,7 @@ namespace Academic__Planner
             // lblBellBadge
             // 
             lblBellBadge.BackColor = Color.Transparent;
-            lblBellBadge.Location = new Point(1359, 119);
+            lblBellBadge.Location = new Point(1260, 64);
             lblBellBadge.Name = "lblBellBadge";
             lblBellBadge.Size = new Size(68, 17);
             lblBellBadge.TabIndex = 5;
