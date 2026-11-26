@@ -1,201 +1,107 @@
+﻿using System.Drawing;
+using System.Net;
+
 namespace Academic__Planner
 {
     public partial class Dashboard : Form
     {
-        private Form? activeForm = null;
-
         public Dashboard()
         {
             InitializeComponent();
 
+            // "View All ->" at ang Completed button
+            guna2HtmlLabel7.Cursor = Cursors.Hand;
+            guna2HtmlLabel7.Click += (s, e) => GoTo(new My_Activities());
+
+            // pag bumalik ka sa Dashboard (galing My Activities / Completed), mag-update ang numbers
+            VisibleChanged += (s, e) => { if (Visible && IsHandleCreated) RefreshStats(); };
         }
 
-        // Opens another form inside the dashboard content panel
-        private void OpenChildForm(Form childForm)
+        private void Dashboard_Load(object? sender, EventArgs e)
         {
-            // Close the previous form if there is one
-            if (activeForm != null)
+            try
             {
-                activeForm.Close();
-                activeForm.Dispose();
+                if (Session.UserId != 0)
+                    Db.LoadActivitiesForUser(Session.UserId);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading activities: " + ex.Message);
             }
 
-            activeForm = childForm;
-
-            // Prepare the child form
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-
-            // Display it inside the content panel
-            guna2ShadowPanel5.Controls.Clear();
-            guna2ShadowPanel5.Controls.Add(childForm);
-
-            childForm.Show();
-            childForm.BringToFront();
+            RefreshStats();
         }
 
-
-
-        // MY ACTIVITIES BUTTON
-        private void btnMyActivities_ButtonClick(object sender, EventArgs e)
+        // Public para matawag ng My Activities at Completed pagkatapos ng add / done / delete
+        public void RefreshStats()
         {
-            OpenChildForm(new My_Activities());
+            var all = ActivityStore.Items;
+            var pending = ActivityStore.Pending();
+            DateTime today = DateTime.Today;
+
+            int total = all.Count;
+            int completed = total - pending.Count;
+            int dueSoon = pending.Count(a => a.End.Date >= today && a.End.Date <= today.AddDays(3));
+            int overdue = pending.Count(a => a.End.Date < today);
+            int dueToday = pending.Count(a => a.End.Date == today);
+
+            lblTotalCount.Text = total.ToString();
+            lblCompletedCount.Text = completed.ToString();
+            lblDueSoonCount.Text = dueSoon.ToString();
+            lblOverdueCount.Text = overdue.ToString();
+
+            guna2HtmlLabel17.Text = $"You have {dueToday} {(dueToday == 1 ? "activity" : "activities")} to complete today";
+
+            // Up-Coming Activities (susunod na 5 na hindi pa tapos)
+            if (pending.Count == 0)
+            {
+                guna2HtmlLabel9.Text = "No Upcoming events yet!";
+                guna2HtmlLabel9.ForeColor = Color.FromArgb(158, 170, 162);
+                guna2HtmlLabel9.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+                guna2HtmlLabel9.Location = new Point(290, 196);
+            }
+            else
+            {
+                var lines = pending.Take(5).Select(a =>
+                    $"• <b>{WebUtility.HtmlEncode(a.Title)}</b>" +
+                    (a.Subject != "" ? $" &nbsp;({WebUtility.HtmlEncode(a.Subject)})" : "") +
+                    $" &nbsp;-&nbsp; due {a.End:MMM dd, yyyy}" +
+                    (a.End.Date < today ? " <font color='#DC143C'>(overdue)</font>" : ""));
+
+                guna2HtmlLabel9.Font = new Font("Segoe UI", 12F, FontStyle.Regular);
+                guna2HtmlLabel9.ForeColor = Color.FromArgb(40, 60, 50);
+                guna2HtmlLabel9.Location = new Point(24, 95);
+                guna2HtmlLabel9.Text = string.Join("<br>", lines);
+            }
         }
 
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        private void GoTo(Form form)
         {
-        }
-
-        private void guna2PictureBox2_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void guna2PictureBox6_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void guna2ShadowPanel4_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
-        private void guna2PictureBox2_Click_1(object sender, EventArgs e)
-        {
-        }
-
-        private void guna2Button6_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void guna2ShadowPanel3_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
-        private void Dashboard_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void guna2PictureBox3_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void guna2ShadowPanel5_Paint(object sender, PaintEventArgs e)
-        {
-
-
-
-
-        }
-
-        private void guna2HtmlLabel8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            Calendar calendarForm = new Calendar();
-            calendarForm.Show();
+            form.Show();
             this.Hide();
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-            My_Activities activitiesForm = new My_Activities();
-            activitiesForm.Show();
-            this.Hide();
-
-        }
-
-        private void guna2Button4_Click(object sender, EventArgs e)
-        {
-            Stats statsForm = new Stats();
-            statsForm.Show();
-            this.Hide();
-        }
-
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2HtmlLabel16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button8_Click(object sender, EventArgs e)
-        {
-            My_Activities activitiesForm = new My_Activities();
-            activitiesForm.Show();
-            this.Hide();
-        }
-
-        private void guna2Button9_Click(object sender, EventArgs e)
+        private void Logout(bool closeThis)
         {
             var confirm = MessageBox.Show("Are you sure you want to logout?", "Logout",
-        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (confirm != DialogResult.Yes) return;
 
-            Login loginForm = Application.OpenForms.OfType<Login>().FirstOrDefault();
-            if (loginForm == null)
-                loginForm = new Login();
-
+            Login loginForm = Application.OpenForms.OfType<Login>().FirstOrDefault() ?? new Login();
             loginForm.Show();
-            this.Hide();
+
+            if (closeThis) this.Close();
+            else this.Hide();
         }
 
-        private void guna2ImageButton2_Click(object sender, EventArgs e)
-        {
-            Profile profileForm = new Profile();
-            profileForm.Show();
-            this.Hide();
-        }
-
-        private void guna2Button5_Click(object sender, EventArgs e)
-        {
-            Settings settingsForm = new Settings();
-            settingsForm.Show();
-            this.Hide();
-        }
-
-        private void guna2Button6_Click_1(object sender, EventArgs e)
-        {
-            About aboutForm = new About();
-            aboutForm.Show();
-            this.Hide();
-        }
-
-        private void guna2Button7_Click(object sender, EventArgs e)
-        {
-            var confirm = MessageBox.Show("Are you sure you want to logout?", "Logout",
-        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (confirm != DialogResult.Yes) return;
-
-            Login loginForm = Application.OpenForms.OfType<Login>().FirstOrDefault();
-            if (loginForm == null)
-                loginForm = new Login();
-
-            loginForm.Show();
-            this.Close();
-        }
+        // ---------- SIDEBAR ----------
+        private void guna2Button2_Click(object? sender, EventArgs e) => GoTo(new Calendar());       // Calendar
+        private void guna2Button3_Click(object? sender, EventArgs e) => GoTo(new My_Activities());  // My Activities
+        private void btnCompleted_Click(object? sender, EventArgs e) => GoTo(new Completed());      // Completed
+        private void guna2Button5_Click(object? sender, EventArgs e) => GoTo(new Settings());       // Settings
+        private void guna2Button6_Click_1(object? sender, EventArgs e) => GoTo(new About());        // About
+        private void guna2Button7_Click(object? sender, EventArgs e) => Logout(true);               // Logout
+        private void guna2ImageButton2_Click(object? sender, EventArgs e) => GoTo(new Profile());   // Profile
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.SqlClient;
+﻿
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,9 +16,10 @@ namespace Academic__Planner
         public Calendar()
         {
             InitializeComponent();
+            this.DoubleBuffered = true;
 
-          
         }
+
 
         // ---------- FORM EVENTS ----------
         private void Calendar_Load(object sender, EventArgs e)
@@ -31,68 +33,7 @@ namespace Academic__Planner
         }
 
         // ---------- SAVE ACTIVITY ----------
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(guna2TextBox1.Text) || guna2ComboBox1.SelectedItem == null)
-            {
-                MessageBox.Show("Please enter a title and choose a difficulty.");
-                return;
-            }
-
-            if (guna2DateTimePicker2.Value < guna2DateTimePicker1.Value)
-            {
-                MessageBox.Show("End date can't be before the start date.");
-                return;
-            }
-
-            if (Session.UserId == 0)
-            {
-                MessageBox.Show("No user is logged in. Please log in again.");
-                return;
-            }
-
-            string title = guna2TextBox1.Text.Trim();
-            string difficulty = guna2ComboBox1.SelectedItem.ToString();
-            DateTime start = guna2DateTimePicker1.Value;
-            DateTime end = guna2DateTimePicker2.Value;
-
-            try
-            {
-                // 1. I-save sa database
-                using (var conn = new SqlConnection(Db.ConnectionString))
-                {
-                    conn.Open();
-                    using (var cmd = new SqlCommand(
-                        @"INSERT INTO Activities (UserId, Title, Difficulty, StartDate, EndDate)
-                          VALUES (@uid, @title, @diff, @start, @end)", conn))
-                    {
-                        cmd.Parameters.AddWithValue("@uid", Session.UserId);
-                        cmd.Parameters.AddWithValue("@title", title);
-                        cmd.Parameters.AddWithValue("@diff", difficulty);
-                        cmd.Parameters.AddWithValue("@start", start);
-                        cmd.Parameters.AddWithValue("@end", end);
-                        cmd.ExecuteNonQuery();
-                    }
-                }
-
-                // 2. I-add din sa ActivityStore para makita agad sa ibang forms
-                ActivityStore.Items.Add(new Activity
-                {
-                    Title = title,
-                    Difficulty = difficulty,
-                    Start = start,
-                    End = end
-                });
-
-                guna2TextBox1.Clear();
-                guna2ComboBox1.SelectedIndex = -1;
-                MessageBox.Show("Activity saved!");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-        }
+        
 
         // ---------- NAVIGATION ----------
         private void button1_Click(object sender, EventArgs e)   // Back button
@@ -162,6 +103,29 @@ namespace Academic__Planner
         private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
+        {
+            tlpCalendar.Dock = DockStyle.Fill;
+            tlpCalendar.ColumnCount = 7;
+            tlpCalendar.RowCount = 7;
+            tlpCalendar.ColumnStyles.Clear();
+            tlpCalendar.RowStyles.Clear();
+
+            // 7 equal columns
+            for (int c = 0; c < 7; c++)
+                tlpCalendar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100f / 7));
+
+            // header row (day names) fixed height, 6 equal week rows
+            tlpCalendar.RowStyles.Add(new RowStyle(SizeType.Absolute, 30));
+            for (int r = 0; r < 6; r++)
+                tlpCalendar.RowStyles.Add(new RowStyle(SizeType.Percent, 100f / 6));
         }
     }
 }

@@ -118,6 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAJVJREFUSEvN
+        lesNgCAMhFnKUV3KcVyg5hJrsA/l1cAl358ecBQNJCJKkaiC4LiR9VJfBexEdFK7MBdrmAEwRukJyQN4
+        51tWY8lOPR9zIaylAuRg8HfGlv9axzU6mB8wSvMCZMu1rB1g/ZaSroDqMa4hwK6lvE5YawU0j3ENh/CP
+        XIIbYF3XtXxe1+EPDoeEPZkhqMJoLmrhfqoeJgvTAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAASRJREFUSEu1
@@ -158,14 +166,6 @@
         ES9zpHB0ADydX5AZmSOFY+6c1YHMyBwpwkP1NQnXa/A752yW5ny7YBt6t3A/dc7qqHLqFjAsyOoRrjMy
         U8mRQrB0c/bg7QcQz1RypBCM3dya+CRHCkHPzQ2IT3KkqOECYE/6NEeKP5ALsv9dZ3/hlEuyvTKzkDTa
         5gXjsHIKMj4J9QAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAJVJREFUSEvN
-        lesNgCAMhFnKUV3KcVyg5hJrsA/l1cAl358ecBQNJCJKkaiC4LiR9VJfBexEdFK7MBdrmAEwRukJyQN4
-        51tWY8lOPR9zIaylAuRg8HfGlv9axzU6mB8wSvMCZMu1rB1g/ZaSroDqMa4hwK6lvE5YawU0j3ENh/CP
-        XIIbYF3XtXxe1+EPDoeEPZkhqMJoLmrhfqoeJgvTAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -21917,6 +21917,9 @@
   </metadata>
   <metadata name="guna2Elipse4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>549, 17</value>
+  </metadata>
+  <metadata name="tmrFocus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>672, 5</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>

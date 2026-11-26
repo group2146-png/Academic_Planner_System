@@ -1,3 +1,4 @@
+
 namespace Academic__Planner
 {
     internal static class Program
