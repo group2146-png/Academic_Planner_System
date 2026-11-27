@@ -118,29 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Pastel Green Academic Stationery Background4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pastel Green Academic Stationery Background4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="layout-dashboard-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\layout-dashboard-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Green_Academic_Planner_Sidebar_Icons__3_-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Green_Academic_Planner_Sidebar_Icons__3_-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Academic Planner Green Gradient Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Academic Planner Green Gradient Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Green Growth Analytics Icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Green Growth Analytics Icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Green Growth Analytics Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Green Growth Analytics Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pastel Green Academic Stationery Background3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pastel Green Academic Stationery Background3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pastel Green Academic Stationery Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pastel Green Academic Stationery Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Academic Planner Green Wave Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Academic Planner Green Wave Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Academic Planner Green UI Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Academic Planner Green UI Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,26 +127,59 @@
   <data name="Academic Planner About Window" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Academic Planner About Window.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Pastel Green Academic Stationery Background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pastel Green Academic Stationery Background1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Academic Planner Dashboard UI" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Academic Planner Dashboard UI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Academic Planner Sidebar UI Kit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Academic Planner Sidebar UI Kit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Academic_Planner_Sidebar_UI_Kit-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Academic_Planner_Sidebar_UI_Kit-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Pastel Green Academic Stationery Background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pastel Green Academic Stationery Background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Academic Planner Green Wave Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Academic Planner Green Wave Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Academic Planner Sidebar UI Kit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Academic Planner Sidebar UI Kit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Academic_Planner_Green_UI_Poster-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Academic_Planner_Green_UI_Poster-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pastel Green Academic Stationery Background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pastel Green Academic Stationery Background1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Green_Academic_Planner_Sidebar_Icons__3_-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Green_Academic_Planner_Sidebar_Icons__3_-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mint Academic Planner Sidebar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mint Academic Planner Sidebar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Academic Planner Dashboard UI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Academic Planner Dashboard UI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Welcome Back Academic Planner Banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Welcome Back Academic Planner Banner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Green Growth Analytics Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Green Growth Analytics Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pastel Green Academic Stationery Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pastel Green Academic Stationery Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Academic Planner Green Gradient Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Academic Planner Green Gradient Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Green Academic Waves Template" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Green Academic Waves Template.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon-J" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-J.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Green Academic Waves Template1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Green Academic Waves Template1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Good Morning, Student!" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Good Morning, Student!.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pastel Green Academic Stationery Background4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pastel Green Academic Stationery Background4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layout-dashboard-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layout-dashboard-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="focus_timer_card" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\focus_timer_card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,28 +187,31 @@
   <data name="Academic Planner Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Academic Planner Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Mint Academic Planner Sidebar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mint Academic Planner Sidebar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Welcome Back Juan Delacruz!" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Welcome Back Juan Delacruz!.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Green Academic Waves Template1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Green Academic Waves Template1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Minimal White Notification Bell Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minimal White Notification Bell Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Academic_Planner_Green_UI_Poster-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Academic_Planner_Green_UI_Poster-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon-J1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-J1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Academic Planner Green UI Poster" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Academic Planner Green UI Poster.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Green Academic Waves Template" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Green Academic Waves Template.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pastel Green Academic Stationery Background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pastel Green Academic Stationery Background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Academic_Planner_Green_UI_Poster-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Academic_Planner_Green_UI_Poster-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Good Morning, Student!" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Good Morning, Student!.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Green Growth Analytics Icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Green Growth Analytics Icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Minimal White Notification Bell Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Minimal White Notification Bell Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pastel Green Academic Stationery Background3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pastel Green Academic Stationery Background3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Academic Planner Dashboard Splash Screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Academic Planner Dashboard Splash Screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

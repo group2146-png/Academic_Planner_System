@@ -73,6 +73,16 @@ namespace Academic__Planner.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Academic_Planner_Dashboard_Splash_Screen {
+            get {
+                object obj = ResourceManager.GetObject("Academic Planner Dashboard Splash Screen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Academic_Planner_Dashboard_UI {
             get {
                 object obj = ResourceManager.GetObject("Academic Planner Dashboard UI", resourceCulture);
@@ -243,6 +253,26 @@ namespace Academic__Planner.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_J {
+            get {
+                object obj = ResourceManager.GetObject("icon-J", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_J1 {
+            get {
+                object obj = ResourceManager.GetObject("icon-J1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap layout_dashboard_white {
             get {
                 object obj = ResourceManager.GetObject("layout-dashboard-white", resourceCulture);
@@ -326,6 +356,26 @@ namespace Academic__Planner.Properties {
         internal static System.Drawing.Bitmap Pastel_Green_Academic_Stationery_Background4 {
             get {
                 object obj = ResourceManager.GetObject("Pastel Green Academic Stationery Background4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Welcome_Back_Academic_Planner_Banner {
+            get {
+                object obj = ResourceManager.GetObject("Welcome Back Academic Planner Banner", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Welcome_Back_Juan_Delacruz_ {
+            get {
+                object obj = ResourceManager.GetObject("Welcome Back Juan Delacruz!", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

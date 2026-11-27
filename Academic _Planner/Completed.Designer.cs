@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -93,6 +94,8 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges63 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges64 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Button18 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button17 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button16 = new Guna.UI2.WinForms.Guna2Button();
@@ -152,12 +155,14 @@
             guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             guna2Panel13.SuspendLayout();
             guna2Panel10.SuspendLayout();
             guna2Panel7.SuspendLayout();
             guna2Panel2.SuspendLayout();
-            guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
+            guna2Panel5.SuspendLayout();
             SuspendLayout();
             // 
             // guna2Button18
@@ -813,7 +818,7 @@
             guna2HtmlLabel21.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2HtmlLabel21.Location = new Point(539, 129);
             guna2HtmlLabel21.Name = "guna2HtmlLabel21";
-            guna2HtmlLabel21.Size = new Size(91, 27);
+            guna2HtmlLabel21.Size = new Size(81, 27);
             guna2HtmlLabel21.TabIndex = 122;
             guna2HtmlLabel21.Text = "Deadline";
             // 
@@ -823,7 +828,7 @@
             guna2HtmlLabel20.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2HtmlLabel20.Location = new Point(405, 129);
             guna2HtmlLabel20.Name = "guna2HtmlLabel20";
-            guna2HtmlLabel20.Size = new Size(81, 27);
+            guna2HtmlLabel20.Size = new Size(70, 27);
             guna2HtmlLabel20.TabIndex = 121;
             guna2HtmlLabel20.Text = "Priority";
             // 
@@ -843,7 +848,7 @@
             guna2HtmlLabel18.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2HtmlLabel18.Location = new Point(83, 129);
             guna2HtmlLabel18.Name = "guna2HtmlLabel18";
-            guna2HtmlLabel18.Size = new Size(123, 27);
+            guna2HtmlLabel18.Size = new Size(41, 27);
             guna2HtmlLabel18.TabIndex = 119;
             guna2HtmlLabel18.Text = "Title";
             // 
@@ -858,13 +863,13 @@
             // 
             // guna2Panel4
             // 
-            guna2Panel4.Controls.Add(guna2HtmlLabel1);
+            guna2Panel4.BorderRadius = 30;
             guna2Panel4.CustomizableEdges = customizableEdges61;
             guna2Panel4.FillColor = Color.FromArgb(46, 125, 82);
             guna2Panel4.Location = new Point(51, 41);
             guna2Panel4.Name = "guna2Panel4";
             guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges62;
-            guna2Panel4.Size = new Size(1370, 72);
+            guna2Panel4.Size = new Size(1367, 71);
             guna2Panel4.TabIndex = 116;
             // 
             // guna2HtmlLabel1
@@ -872,7 +877,7 @@
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2HtmlLabel1.ForeColor = Color.White;
-            guna2HtmlLabel1.Location = new Point(26, 21);
+            guna2HtmlLabel1.Location = new Point(32, 3);
             guna2HtmlLabel1.Margin = new Padding(2);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(145, 39);
@@ -902,10 +907,10 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.Location = new Point(51, 106);
+            guna2DataGridView1.Location = new Point(51, 70);
             guna2DataGridView1.Name = "guna2DataGridView1";
             guna2DataGridView1.RowHeadersVisible = false;
-            guna2DataGridView1.Size = new Size(1367, 432);
+            guna2DataGridView1.Size = new Size(1367, 468);
             guna2DataGridView1.TabIndex = 118;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
@@ -913,11 +918,28 @@
             guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
             guna2DataGridView1.ThemeStyle.RowsStyle.Height = 25;
             // 
+            // guna2Elipse1
+            // 
+            guna2Elipse1.BorderRadius = 60;
+            guna2Elipse1.TargetControl = guna2DataGridView1;
+            // 
+            // guna2Panel5
+            // 
+            guna2Panel5.Controls.Add(guna2HtmlLabel1);
+            guna2Panel5.CustomizableEdges = customizableEdges63;
+            guna2Panel5.FillColor = Color.FromArgb(46, 125, 82);
+            guna2Panel5.Location = new Point(51, 70);
+            guna2Panel5.Name = "guna2Panel5";
+            guna2Panel5.ShadowDecoration.CustomizableEdges = customizableEdges64;
+            guna2Panel5.Size = new Size(1367, 53);
+            guna2Panel5.TabIndex = 117;
+            // 
             // Completed
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1509, 638);
+            Controls.Add(guna2Panel5);
             Controls.Add(guna2Button18);
             Controls.Add(guna2Button17);
             Controls.Add(guna2Button16);
@@ -974,9 +996,9 @@
             guna2Panel10.ResumeLayout(false);
             guna2Panel7.ResumeLayout(false);
             guna2Panel2.ResumeLayout(false);
-            guna2Panel4.ResumeLayout(false);
-            guna2Panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
+            guna2Panel5.ResumeLayout(false);
+            guna2Panel5.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1042,5 +1064,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
     }
 }
