@@ -223,6 +223,7 @@
             btnAdd.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAdd.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnAdd.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnAdd.FillColor = Color.FromArgb(46, 125, 82);
             btnAdd.Font = new Font("Segoe UI", 9F);
             btnAdd.ForeColor = Color.White;
             btnAdd.Location = new Point(1215, 25);

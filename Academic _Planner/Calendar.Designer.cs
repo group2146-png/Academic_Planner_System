@@ -46,7 +46,6 @@
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            tlpCalendar = new TableLayoutPanel();
             guna2ShadowPanel1.SuspendLayout();
             guna2Panel2.SuspendLayout();
             SuspendLayout();
@@ -68,7 +67,6 @@
             // guna2ShadowPanel1
             // 
             guna2ShadowPanel1.BackColor = Color.Transparent;
-            guna2ShadowPanel1.Controls.Add(tlpCalendar);
             guna2ShadowPanel1.Controls.Add(guna2Button3);
             guna2ShadowPanel1.Controls.Add(guna2Button2);
             guna2ShadowPanel1.Controls.Add(guna2Panel2);
@@ -155,29 +153,6 @@
             guna2Panel1.Size = new Size(1035, 50);
             guna2Panel1.TabIndex = 22;
             // 
-            // tlpCalendar
-            // 
-            tlpCalendar.ColumnCount = 7;
-            tlpCalendar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857132F));
-            tlpCalendar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857132F));
-            tlpCalendar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857132F));
-            tlpCalendar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857132F));
-            tlpCalendar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857132F));
-            tlpCalendar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857132F));
-            tlpCalendar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14.2857132F));
-            tlpCalendar.Location = new Point(63, 186);
-            tlpCalendar.Name = "tlpCalendar";
-            tlpCalendar.RowCount = 6;
-            tlpCalendar.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
-            tlpCalendar.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
-            tlpCalendar.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
-            tlpCalendar.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
-            tlpCalendar.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
-            tlpCalendar.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
-            tlpCalendar.Size = new Size(910, 415);
-            tlpCalendar.TabIndex = 53;
-            tlpCalendar.Paint += tableLayoutPanel1_Paint_1;
-            // 
             // Calendar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -206,6 +181,5 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private TableLayoutPanel tlpCalendar;
     }
 }
