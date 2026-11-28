@@ -14,6 +14,17 @@ namespace Academic__Planner
         {
             InitializeComponent();
         }
+        private void GoTo(Form form)
+        {
+            form.FormClosed += (s, e) =>
+            {
+                if (IsDisposed) return;
+                if (!Application.OpenForms.Cast<Form>().Any(f => f != this && f.Visible))
+                    Show();
+            };
+            form.Show();
+            Hide();
+        }
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -22,6 +33,13 @@ namespace Academic__Planner
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
+            GoTo(new signup());
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            GoTo(new Login());
 
         }
     }

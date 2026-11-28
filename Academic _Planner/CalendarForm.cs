@@ -11,39 +11,39 @@ using System.Windows.Forms;
 
 namespace Academic__Planner
 {
-    public partial class Calendar : Form
+    public partial class CalendarForm : Form
     {
-        public Calendar()
+        public CalendarForm()
         {
             InitializeComponent();
 
         }
 
 
-       
+
         private void Calendar_Load(object sender, EventArgs e)
         {
         }
 
         private void Calendar_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+
         }
 
-        
+
         private void button1_Click(object sender, EventArgs e)   // Back button
         {
-            
+
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)   // Dashboard
         {
-            
+
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)   // Calendar
         {
-            
+
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)   // My Activities
@@ -52,7 +52,7 @@ namespace Academic__Planner
 
         private void guna2Button4_Click(object sender, EventArgs e)   // Stats
         {
-            
+
         }
 
         // ---------- EVENTS NA HINAHANAP NG DESIGNER (huwag burahin) ----------
@@ -92,7 +92,12 @@ namespace Academic__Planner
 
         private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
         {
-            
+
+        }
+
+        private void guna2Button3_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

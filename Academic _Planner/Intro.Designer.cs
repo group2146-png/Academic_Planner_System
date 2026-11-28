@@ -54,6 +54,7 @@
             guna2Button1.Size = new Size(126, 57);
             guna2Button1.TabIndex = 8;
             guna2Button1.Text = "Login";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // guna2Button2
             // 

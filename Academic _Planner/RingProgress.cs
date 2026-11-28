@@ -1,4 +1,5 @@
-﻿using System.Drawing.Drawing2D;
+using System.ComponentModel;
+using System.Drawing.Drawing2D;
 
 namespace Academic__Planner
 {
@@ -9,18 +10,24 @@ namespace Academic__Planner
         string _center = "";
         string _sub = "";
 
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public float Progress
         {
             get => _progress;
             set { _progress = Math.Clamp(value, 0f, 1f); Invalidate(); }
         }
 
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string CenterText
         {
             get => _center;
             set { _center = value; Invalidate(); }
         }
 
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string SubText
         {
             get => _sub;
