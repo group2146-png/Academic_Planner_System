@@ -7,9 +7,26 @@ namespace Academic__Planner
         {
             ApplicationConfiguration.Initialize();
 
-            // Login muna. Kapag sinara lang ang window nang hindi nag-login, titigil ang app.
-            Application.Run(new Intro ());
+            // 1. Intro: pipili ng Login o Sign Up. Kapag sinara lang ang window (X), titigil ang app.
+            IntroChoice choice;
+            using (var intro = new Intro())
+            {
+                Application.Run(intro);
+                choice = intro.Choice;
+            }
+            if (choice == IntroChoice.None)
+                return;
 
+            // 2. Sign Up (kung iyon ang pinindot). Pagkatapos, dederetso sa Login.
+            if (choice == IntroChoice.Signup)
+            {
+                using (var signUpForm = new signup())
+                {
+                    Application.Run(signUpForm);
+                }
+            }
+
+            // 3. Login. Kapag sinara lang ang window nang hindi nag-login, titigil ang app.
             using (var login = new Login())
             {
                 Application.Run(login);
@@ -17,7 +34,8 @@ namespace Academic__Planner
                     return;
             }
 
-            Application.Run(new Dashboard ());
+            // 4. Dashboard
+            Application.Run(new Dashboard());
         }
     }
 }

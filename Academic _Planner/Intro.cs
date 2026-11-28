@@ -1,29 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-
-namespace Academic__Planner
+﻿namespace Academic__Planner
 {
+    /// <summary>Ano ang pinindot ng user sa Intro.</summary>
+    internal enum IntroChoice { None, Login, Signup }
+
     public partial class Intro : Form
     {
+        /// <summary>Chine-check ito ng Program.cs pagkasara ng Intro.</summary>
+        internal IntroChoice Choice { get; private set; } = IntroChoice.None;
+
         public Intro()
         {
             InitializeComponent();
-        }
-        private void GoTo(Form form)
-        {
-            form.FormClosed += (s, e) =>
-            {
-                if (IsDisposed) return;
-                if (!Application.OpenForms.Cast<Form>().Any(f => f != this && f.Visible))
-                    Show();
-            };
-            form.Show();
-            Hide();
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -31,16 +18,16 @@ namespace Academic__Planner
 
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)   // Login
         {
-            GoTo(new signup());
-
+            Choice = IntroChoice.Login;
+            Close();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void guna2Button2_Click(object sender, EventArgs e)   // Signup
         {
-            GoTo(new Login());
-
+            Choice = IntroChoice.Signup;
+            Close();
         }
     }
 }
